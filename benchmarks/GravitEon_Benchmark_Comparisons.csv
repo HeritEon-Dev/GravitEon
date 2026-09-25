@@ -1,0 +1,851 @@
+﻿case,encoding,dataset,n,query,field,algorithm,rival,own,other,ratio,outcome,verified
+1_lookup-stress_random_short_16_s731,bytes,random_short,16,hit,ns_per_query,GravitEon Lookup,boost::unordered_flat_map,9.69467163086,19.0832138062,1.9684229165075038,win,True
+1_lookup-stress_random_short_16_s731,bytes,random_short,16,hot_hits,ns_per_query,GravitEon Lookup,ankerl::unordered_dense,6.64854049683,10.4097366333,1.5657175643681984,win,True
+1_lookup-stress_random_short_16_s731,bytes,random_short,16,append_miss,ns_per_query,GravitEon Lookup,ankerl::unordered_dense,7.09848403931,8.39176177979,1.1821906949875614,win,True
+1_lookup-stress_random_short_16_s731,bytes,random_short,16,early_miss,ns_per_query,GravitEon Lookup,ankerl::unordered_dense,3.13520431519,9.13000106812,2.9120912547502353,win,True
+1_lookup-stress_random_short_16_s731,bytes,random_short,16,same_alphabet_miss,ns_per_query,GravitEon Lookup,ankerl::unordered_dense,6.94894790649,8.34007263184,1.2001921361434806,win,True
+1_lookup-stress_random_short_16_s731,bytes,random_short,16,interior_miss,ns_per_query,GravitEon Lookup,ankerl::unordered_dense,7.29064941406,8.34808349609,1.1450397655921765,win,True
+1_lookup-stress_random_short_16_s731,bytes,random_short,16,mixed,ns_per_query,GravitEon Lookup,ankerl::unordered_dense,8.74862670898,14.1380310059,1.6160286038251082,win,True
+1_lookup-stress_random_short_16_s731,utf16,random_short,16,hit,ns_per_query,GravitEon Lookup,ankerl::unordered_dense,13.3718490601,17.9954528809,1.345771463618766,win,True
+1_lookup-stress_random_short_16_s731,utf16,random_short,16,hot_hits,ns_per_query,GravitEon Lookup,ankerl::unordered_dense,8.35771560669,13.3344650269,1.5954676677711217,win,True
+1_lookup-stress_random_short_16_s731,utf16,random_short,16,append_miss,ns_per_query,GravitEon Lookup,ankerl::unordered_dense,6.38093948364,10.9864234924,1.7217564154256495,win,True
+1_lookup-stress_random_short_16_s731,utf16,random_short,16,early_miss,ns_per_query,GravitEon Lookup,ankerl::unordered_dense,3.19910049438,11.0967636108,3.468713668199599,win,True
+1_lookup-stress_random_short_16_s731,utf16,random_short,16,same_alphabet_miss,ns_per_query,GravitEon Lookup,ankerl::unordered_dense,8.40625762939,10.2631568909,1.2208948789551606,win,True
+1_lookup-stress_random_short_16_s731,utf16,random_short,16,interior_miss,ns_per_query,GravitEon Lookup,ankerl::unordered_dense,8.31804275513,10.3118896484,1.2397014480408064,win,True
+1_lookup-stress_random_short_16_s731,utf16,random_short,16,mixed,ns_per_query,GravitEon Lookup,ankerl::unordered_dense,10.9625816345,14.338684082,1.3079660029052986,win,True
+1_lookup-stress_random_short_16_s731,bytes,random_short,16,,build_ms,GravitEon Lookup,tsl::robin_map,0.0003,0.0004,1.3333333333333335,win,True
+1_lookup-stress_random_short_16_s731,utf16,random_short,16,,build_ms,GravitEon Lookup,tsl::robin_map,0.0003,0.0005,1.6666666666666667,win,True
+2_parallel_random_short_16_s731,bytes,random_short,16,,ms,GravitEon Parallel Sort,std::sort,0.0002,0.0004,2.0,win,True
+2_parallel_random_short_16_s731,bytes,random_short,16,,ms,GravitEon Sort,std::sort,0.0002,0.0004,2.0,win,True
+2_parallel_random_short_16_s731,utf16,random_short,16,,ms,GravitEon Sort,std::sort,0.0002,0.0002,1.0,near,True
+2_parallel_random_short_16_s731,utf16,random_short,16,,ms,GravitEon Parallel Sort,std::sort,0.0002,0.0002,1.0,near,True
+3_lookup-stress_tiny_keys_16_s731,bytes,tiny_keys,16,hit,ns_per_query,GravitEon Lookup,boost::unordered_flat_map,12.3695373535,15.5749320984,1.25913618701293,win,True
+3_lookup-stress_tiny_keys_16_s731,bytes,tiny_keys,16,hot_hits,ns_per_query,GravitEon Lookup,ankerl::unordered_dense,7.01179504395,9.99727249146,1.4257793373589784,win,True
+3_lookup-stress_tiny_keys_16_s731,bytes,tiny_keys,16,append_miss,ns_per_query,GravitEon Lookup,boost::unordered_flat_map,5.68552017212,9.57880020142,1.6847711223313249,win,True
+3_lookup-stress_tiny_keys_16_s731,bytes,tiny_keys,16,early_miss,ns_per_query,GravitEon Lookup,boost::unordered_flat_map,3.19766998291,9.51061248779,2.974232031016217,win,True
+3_lookup-stress_tiny_keys_16_s731,bytes,tiny_keys,16,same_alphabet_miss,ns_per_query,GravitEon Lookup,boost::unordered_flat_map,8.35943222046,9.34562683105,1.1179738748495687,win,True
+3_lookup-stress_tiny_keys_16_s731,bytes,tiny_keys,16,interior_miss,ns_per_query,GravitEon Lookup,boost::unordered_flat_map,8.27398300171,9.33847427368,1.1286552403781829,win,True
+3_lookup-stress_tiny_keys_16_s731,bytes,tiny_keys,16,mixed,ns_per_query,GravitEon Lookup,boost::unordered_flat_map,10.2845191956,12.6191139221,1.2270008623736932,win,True
+3_lookup-stress_tiny_keys_16_s731,utf16,tiny_keys,16,hit,ns_per_query,GravitEon Lookup,tsl::robin_map,9.58232879639,13.8843536377,1.448953999880564,win,True
+3_lookup-stress_tiny_keys_16_s731,utf16,tiny_keys,16,hot_hits,ns_per_query,GravitEon Lookup,tsl::robin_map,6.83498382568,9.49392318726,1.389019115391318,win,True
+3_lookup-stress_tiny_keys_16_s731,utf16,tiny_keys,16,append_miss,ns_per_query,GravitEon Lookup,ankerl::unordered_dense,5.37443161011,8.25529098511,1.53603052080535,win,True
+3_lookup-stress_tiny_keys_16_s731,utf16,tiny_keys,16,early_miss,ns_per_query,GravitEon Lookup,ankerl::unordered_dense,6.10113143921,8.18738937378,1.3419460726845345,win,True
+3_lookup-stress_tiny_keys_16_s731,utf16,tiny_keys,16,same_alphabet_miss,ns_per_query,GravitEon Lookup,ankerl::unordered_dense,8.13598632812,9.73424911499,1.1964436421612468,win,True
+3_lookup-stress_tiny_keys_16_s731,utf16,tiny_keys,16,interior_miss,ns_per_query,GravitEon Lookup,ankerl::unordered_dense,7.91749954224,9.78527069092,1.2359041688244385,win,True
+3_lookup-stress_tiny_keys_16_s731,utf16,tiny_keys,16,mixed,ns_per_query,GravitEon Lookup,ankerl::unordered_dense,8.80308151245,13.1771087646,1.4968745598872295,win,True
+3_lookup-stress_tiny_keys_16_s731,bytes,tiny_keys,16,,build_ms,GravitEon Lookup,tsl::robin_map,0.0003,0.0004,1.3333333333333335,win,True
+3_lookup-stress_tiny_keys_16_s731,utf16,tiny_keys,16,,build_ms,GravitEon Lookup,tsl::robin_map,0.0003,0.0004,1.3333333333333335,win,True
+4_parallel_tiny_keys_16_s731,bytes,tiny_keys,16,,ms,GravitEon Parallel Sort,std::sort,0.0002,0.0003,1.4999999999999998,win,True
+4_parallel_tiny_keys_16_s731,bytes,tiny_keys,16,,ms,GravitEon Sort,std::sort,0.0002,0.0003,1.4999999999999998,win,True
+4_parallel_tiny_keys_16_s731,utf16,tiny_keys,16,,ms,GravitEon Sort,std::sort,0.0002,0.0001,0.5,loss,True
+4_parallel_tiny_keys_16_s731,utf16,tiny_keys,16,,ms,GravitEon Parallel Sort,std::sort,0.0002,0.0001,0.5,loss,True
+5_lookup-stress_length_boundaries_16_s731,bytes,length_boundaries,16,hit,ns_per_query,GravitEon Lookup,ankerl::unordered_dense,13.3373260498,19.8387145996,1.4874581700653176,win,True
+5_lookup-stress_length_boundaries_16_s731,bytes,length_boundaries,16,hot_hits,ns_per_query,GravitEon Lookup,ankerl::unordered_dense,8.61330032349,12.9749298096,1.506383072956955,win,True
+5_lookup-stress_length_boundaries_16_s731,bytes,length_boundaries,16,append_miss,ns_per_query,GravitEon Lookup,ankerl::unordered_dense,7.33108520508,13.2656097412,1.8095015090000226,win,True
+5_lookup-stress_length_boundaries_16_s731,bytes,length_boundaries,16,early_miss,ns_per_query,GravitEon Lookup,ankerl::unordered_dense,3.32508087158,14.1477584839,4.254861469633164,win,True
+5_lookup-stress_length_boundaries_16_s731,bytes,length_boundaries,16,same_alphabet_miss,ns_per_query,GravitEon Lookup,ankerl::unordered_dense,9.68761444092,14.4328117371,1.4898210312888305,win,True
+5_lookup-stress_length_boundaries_16_s731,bytes,length_boundaries,16,interior_miss,ns_per_query,GravitEon Lookup,ankerl::unordered_dense,9.48696136475,14.0957832336,1.485805906828572,win,True
+5_lookup-stress_length_boundaries_16_s731,bytes,length_boundaries,16,mixed,ns_per_query,GravitEon Lookup,ankerl::unordered_dense,11.8750572205,17.3392295837,1.4601386133758714,win,True
+5_lookup-stress_length_boundaries_16_s731,utf16,length_boundaries,16,hit,ns_per_query,GravitEon Lookup,ankerl::unordered_dense,14.3877029419,31.8593978882,2.2143491575308225,win,True
+5_lookup-stress_length_boundaries_16_s731,utf16,length_boundaries,16,hot_hits,ns_per_query,GravitEon Lookup,ankerl::unordered_dense,10.7662200928,25.9190559387,2.407442511418988,win,True
+5_lookup-stress_length_boundaries_16_s731,utf16,length_boundaries,16,append_miss,ns_per_query,GravitEon Lookup,ankerl::unordered_dense,8.28886032104,14.8732185364,1.794362308005917,win,True
+5_lookup-stress_length_boundaries_16_s731,utf16,length_boundaries,16,early_miss,ns_per_query,GravitEon Lookup,ankerl::unordered_dense,3.41138839722,14.9222373962,4.37424170415787,win,True
+5_lookup-stress_length_boundaries_16_s731,utf16,length_boundaries,16,same_alphabet_miss,ns_per_query,GravitEon Lookup,ankerl::unordered_dense,10.6214523315,14.6148681641,1.3759764397526637,win,True
+5_lookup-stress_length_boundaries_16_s731,utf16,length_boundaries,16,interior_miss,ns_per_query,GravitEon Lookup,ankerl::unordered_dense,10.3889465332,14.6858215332,1.4136006462511341,win,True
+5_lookup-stress_length_boundaries_16_s731,utf16,length_boundaries,16,mixed,ns_per_query,GravitEon Lookup,ankerl::unordered_dense,13.3687019348,24.8648643494,1.859931089096571,win,True
+5_lookup-stress_length_boundaries_16_s731,bytes,length_boundaries,16,,build_ms,GravitEon Lookup,boost::unordered_flat_map,0.0003,0.0004,1.3333333333333335,win,True
+5_lookup-stress_length_boundaries_16_s731,utf16,length_boundaries,16,,build_ms,GravitEon Lookup,ankerl::unordered_dense,0.0003,0.0006,2.0,win,True
+6_parallel_length_boundaries_16_s731,bytes,length_boundaries,16,,ms,GravitEon Parallel Sort,std::sort,0.0002,0.0004,2.0,win,True
+6_parallel_length_boundaries_16_s731,bytes,length_boundaries,16,,ms,GravitEon Sort,std::sort,0.0002,0.0004,2.0,win,True
+6_parallel_length_boundaries_16_s731,utf16,length_boundaries,16,,ms,GravitEon Sort,std::sort,0.0002,0.0002,1.0,near,True
+6_parallel_length_boundaries_16_s731,utf16,length_boundaries,16,,ms,GravitEon Parallel Sort,std::sort,0.0002,0.0002,1.0,near,True
+7_lookup-stress_random_short_128_s731,bytes,random_short,128,hit,ns_per_query,GravitEon Lookup,ankerl::unordered_dense,11.7403030396,18.5228347778,1.5777135151726955,win,True
+7_lookup-stress_random_short_128_s731,bytes,random_short,128,hot_hits,ns_per_query,GravitEon Lookup,ankerl::unordered_dense,6.6460609436,10.1431846619,1.5261949518635767,win,True
+7_lookup-stress_random_short_128_s731,bytes,random_short,128,append_miss,ns_per_query,GravitEon Lookup,ankerl::unordered_dense,6.74953460693,8.27970504761,1.2267075479706284,win,True
+7_lookup-stress_random_short_128_s731,bytes,random_short,128,early_miss,ns_per_query,GravitEon Lookup,ankerl::unordered_dense,1.94482803345,8.28304290771,4.259010444751978,win,True
+7_lookup-stress_random_short_128_s731,bytes,random_short,128,same_alphabet_miss,ns_per_query,GravitEon Lookup,ankerl::unordered_dense,7.22675323486,8.4451675415,1.1685977460476555,win,True
+7_lookup-stress_random_short_128_s731,bytes,random_short,128,interior_miss,ns_per_query,GravitEon Lookup,ankerl::unordered_dense,7.59315490723,8.40845108032,1.107372519466671,win,True
+7_lookup-stress_random_short_128_s731,bytes,random_short,128,mixed,ns_per_query,GravitEon Lookup,ankerl::unordered_dense,9.77554321289,13.9239311218,1.4243639272587891,win,True
+7_lookup-stress_random_short_128_s731,utf16,random_short,128,hit,ns_per_query,GravitEon Lookup,ankerl::unordered_dense,12.5812530518,23.4154701233,1.8611397471216073,win,True
+7_lookup-stress_random_short_128_s731,utf16,random_short,128,hot_hits,ns_per_query,GravitEon Lookup,ankerl::unordered_dense,8.23745727539,13.8491630554,1.681242474759217,win,True
+7_lookup-stress_random_short_128_s731,utf16,random_short,128,append_miss,ns_per_query,GravitEon Lookup,absl::flat_hash_map,6.97250366211,11.0165596008,1.580000547101355,win,True
+7_lookup-stress_random_short_128_s731,utf16,random_short,128,early_miss,ns_per_query,GravitEon Lookup,absl::flat_hash_map,2.49490737915,11.2190246582,4.4967700011461975,win,True
+7_lookup-stress_random_short_128_s731,utf16,random_short,128,same_alphabet_miss,ns_per_query,GravitEon Lookup,ankerl::unordered_dense,7.68566131592,10.9560966492,1.4255242585964143,win,True
+7_lookup-stress_random_short_128_s731,utf16,random_short,128,interior_miss,ns_per_query,GravitEon Lookup,ankerl::unordered_dense,7.64837265015,10.8531951904,1.419020187279597,win,True
+7_lookup-stress_random_short_128_s731,utf16,random_short,128,mixed,ns_per_query,GravitEon Lookup,ankerl::unordered_dense,10.2662086487,17.3553466797,1.690531263642074,win,True
+7_lookup-stress_random_short_128_s731,bytes,random_short,128,,build_ms,GravitEon Lookup,boost::unordered_flat_map,0.0023,0.0018,0.782608695652174,loss,True
+7_lookup-stress_random_short_128_s731,utf16,random_short,128,,build_ms,GravitEon Lookup,ankerl::unordered_dense,0.002,0.0021,1.0499999999999998,win,True
+8_parallel_random_short_128_s731,bytes,random_short,128,,ms,GravitEon Parallel Sort,std::sort,0.003,0.0062,2.0666666666666664,win,True
+8_parallel_random_short_128_s731,bytes,random_short,128,,ms,GravitEon Sort,std::sort,0.0029,0.0062,2.137931034482759,win,True
+8_parallel_random_short_128_s731,utf16,random_short,128,,ms,GravitEon Sort,std::sort,0.0025,0.002,0.8,loss,True
+8_parallel_random_short_128_s731,utf16,random_short,128,,ms,GravitEon Parallel Sort,std::sort,0.0027,0.002,0.7407407407407407,loss,True
+9_lookup-stress_tiny_keys_128_s731,bytes,tiny_keys,128,hit,ns_per_query,GravitEon Lookup,boost::unordered_flat_map,12.0583534241,17.2381401062,1.429560031948276,win,True
+9_lookup-stress_tiny_keys_128_s731,bytes,tiny_keys,128,hot_hits,ns_per_query,GravitEon Lookup,tsl::robin_map,6.62889480591,9.15355682373,1.3808571551880917,win,True
+9_lookup-stress_tiny_keys_128_s731,bytes,tiny_keys,128,append_miss,ns_per_query,GravitEon Lookup,ankerl::unordered_dense,7.67078399658,9.49096679688,1.2372877141517118,win,True
+9_lookup-stress_tiny_keys_128_s731,bytes,tiny_keys,128,early_miss,ns_per_query,GravitEon Lookup,ankerl::unordered_dense,2.05383300781,9.54132080078,4.645616641906977,win,True
+9_lookup-stress_tiny_keys_128_s731,bytes,tiny_keys,128,same_alphabet_miss,ns_per_query,GravitEon Lookup,boost::unordered_flat_map,7.29808807373,9.80310440063,1.3432428194333512,win,True
+9_lookup-stress_tiny_keys_128_s731,bytes,tiny_keys,128,interior_miss,ns_per_query,GravitEon Lookup,boost::unordered_flat_map,7.61499404907,9.73482131958,1.2783754336313486,win,True
+9_lookup-stress_tiny_keys_128_s731,bytes,tiny_keys,128,mixed,ns_per_query,GravitEon Lookup,boost::unordered_flat_map,10.304069519,13.6766433716,1.327305036750888,win,True
+9_lookup-stress_tiny_keys_128_s731,utf16,tiny_keys,128,hit,ns_per_query,GravitEon Lookup,ankerl::unordered_dense,10.0193977356,17.0983314514,1.7065228771833048,win,True
+9_lookup-stress_tiny_keys_128_s731,utf16,tiny_keys,128,hot_hits,ns_per_query,GravitEon Lookup,tsl::robin_map,7.07817077637,9.62553024292,1.3598895176496997,win,True
+9_lookup-stress_tiny_keys_128_s731,utf16,tiny_keys,128,append_miss,ns_per_query,GravitEon Lookup,ankerl::unordered_dense,6.64119720459,8.20636749268,1.2356759240650537,win,True
+9_lookup-stress_tiny_keys_128_s731,utf16,tiny_keys,128,early_miss,ns_per_query,GravitEon Lookup,ankerl::unordered_dense,6.92205429077,8.1862449646,1.1826322968191243,win,True
+9_lookup-stress_tiny_keys_128_s731,utf16,tiny_keys,128,same_alphabet_miss,ns_per_query,GravitEon Lookup,ankerl::unordered_dense,7.24296569824,8.70561599731,1.2019408016008437,win,True
+9_lookup-stress_tiny_keys_128_s731,utf16,tiny_keys,128,interior_miss,ns_per_query,GravitEon Lookup,ankerl::unordered_dense,7.84111022949,8.45718383789,1.0785696910729528,win,True
+9_lookup-stress_tiny_keys_128_s731,utf16,tiny_keys,128,mixed,ns_per_query,GravitEon Lookup,ankerl::unordered_dense,9.01737213135,12.6976966858,1.4081371491429195,win,True
+9_lookup-stress_tiny_keys_128_s731,bytes,tiny_keys,128,,build_ms,GravitEon Lookup,boost::unordered_flat_map,0.0026,0.0017,0.6538461538461539,loss,True
+9_lookup-stress_tiny_keys_128_s731,utf16,tiny_keys,128,,build_ms,GravitEon Lookup,tsl::robin_map,0.0023,0.0027,1.173913043478261,win,True
+10_parallel_tiny_keys_128_s731,bytes,tiny_keys,128,,ms,GravitEon Parallel Sort,Microsoft PPL Buffered Sort,0.0017,0.0063,3.7058823529411766,win,True
+10_parallel_tiny_keys_128_s731,bytes,tiny_keys,128,,ms,GravitEon Sort,std::sort,0.002,0.0075,3.75,win,True
+10_parallel_tiny_keys_128_s731,utf16,tiny_keys,128,,ms,GravitEon Sort,std::sort,0.0017,0.0022,1.2941176470588236,win,True
+10_parallel_tiny_keys_128_s731,utf16,tiny_keys,128,,ms,GravitEon Parallel Sort,Microsoft PPL Buffered Sort,0.0018,0.002,1.1111111111111112,win,True
+11_lookup-stress_length_boundaries_128_s731,bytes,length_boundaries,128,hit,ns_per_query,GravitEon Lookup,boost::unordered_flat_map,14.6946907043,21.8516349792,1.487042865951967,win,True
+11_lookup-stress_length_boundaries_128_s731,bytes,length_boundaries,128,hot_hits,ns_per_query,GravitEon Lookup,ankerl::unordered_dense,8.43114852905,12.9602432251,1.5371859694375856,win,True
+11_lookup-stress_length_boundaries_128_s731,bytes,length_boundaries,128,append_miss,ns_per_query,GravitEon Lookup,ankerl::unordered_dense,9.58480834961,14.3801689148,1.5003084454354396,win,True
+11_lookup-stress_length_boundaries_128_s731,bytes,length_boundaries,128,early_miss,ns_per_query,GravitEon Lookup,ankerl::unordered_dense,2.73685455322,14.7878646851,5.403233674840918,win,True
+11_lookup-stress_length_boundaries_128_s731,bytes,length_boundaries,128,same_alphabet_miss,ns_per_query,GravitEon Lookup,ankerl::unordered_dense,10.4459762573,13.7397766113,1.315317618274135,win,True
+11_lookup-stress_length_boundaries_128_s731,bytes,length_boundaries,128,interior_miss,ns_per_query,GravitEon Lookup,ankerl::unordered_dense,10.1098060608,13.7632369995,1.3613749775938728,win,True
+11_lookup-stress_length_boundaries_128_s731,bytes,length_boundaries,128,mixed,ns_per_query,GravitEon Lookup,boost::unordered_flat_map,13.1663322449,19.1495895386,1.454436146863727,win,True
+11_lookup-stress_length_boundaries_128_s731,utf16,length_boundaries,128,hit,ns_per_query,GravitEon Lookup,ankerl::unordered_dense,16.6066169739,31.9850921631,1.926045034540736,win,True
+11_lookup-stress_length_boundaries_128_s731,utf16,length_boundaries,128,hot_hits,ns_per_query,GravitEon Lookup,ankerl::unordered_dense,10.6413841248,25.5640983582,2.402328311654708,win,True
+11_lookup-stress_length_boundaries_128_s731,utf16,length_boundaries,128,append_miss,ns_per_query,GravitEon Lookup,ankerl::unordered_dense,10.2728843689,15.0932312012,1.4692301265351586,win,True
+11_lookup-stress_length_boundaries_128_s731,utf16,length_boundaries,128,early_miss,ns_per_query,GravitEon Lookup,ankerl::unordered_dense,3.03497314453,15.146446228,4.990635997981985,win,True
+11_lookup-stress_length_boundaries_128_s731,utf16,length_boundaries,128,same_alphabet_miss,ns_per_query,GravitEon Lookup,ankerl::unordered_dense,10.8444213867,14.9052619934,1.3744635570580432,win,True
+11_lookup-stress_length_boundaries_128_s731,utf16,length_boundaries,128,interior_miss,ns_per_query,GravitEon Lookup,ankerl::unordered_dense,10.692024231,14.7042274475,1.3752519756611838,win,True
+11_lookup-stress_length_boundaries_128_s731,utf16,length_boundaries,128,mixed,ns_per_query,GravitEon Lookup,ankerl::unordered_dense,14.4610404968,23.9748954773,1.6578956045801312,win,True
+11_lookup-stress_length_boundaries_128_s731,bytes,length_boundaries,128,,build_ms,GravitEon Lookup,boost::unordered_flat_map,0.0026,0.0021,0.8076923076923077,loss,True
+11_lookup-stress_length_boundaries_128_s731,utf16,length_boundaries,128,,build_ms,GravitEon Lookup,ankerl::unordered_dense,0.0025,0.0022,0.88,loss,True
+12_parallel_length_boundaries_128_s731,bytes,length_boundaries,128,,ms,GravitEon Parallel Sort,Microsoft PPL Sort,0.0042,0.0069,1.642857142857143,win,True
+12_parallel_length_boundaries_128_s731,bytes,length_boundaries,128,,ms,GravitEon Sort,std::sort,0.0041,0.0072,1.7560975609756095,win,True
+12_parallel_length_boundaries_128_s731,utf16,length_boundaries,128,,ms,GravitEon Sort,std::sort,0.0035,0.0022,0.6285714285714286,loss,True
+12_parallel_length_boundaries_128_s731,utf16,length_boundaries,128,,ms,GravitEon Parallel Sort,std::sort,0.0036,0.0022,0.6111111111111112,loss,True
+13_lookup-stress_random_short_1024_s731,bytes,random_short,1024,hit,ns_per_query,GravitEon Lookup,boost::unordered_flat_map,13.4926795959,21.218585968,1.5725998544016162,win,True
+13_lookup-stress_random_short_1024_s731,bytes,random_short,1024,hot_hits,ns_per_query,GravitEon Lookup,ankerl::unordered_dense,6.57215118408,10.8892440796,1.6568766868871605,win,True
+13_lookup-stress_random_short_1024_s731,bytes,random_short,1024,append_miss,ns_per_query,GravitEon Lookup,ankerl::unordered_dense,7.1738243103,8.73432159424,1.217526554379019,win,True
+13_lookup-stress_random_short_1024_s731,bytes,random_short,1024,early_miss,ns_per_query,GravitEon Lookup,ankerl::unordered_dense,1.95283889771,8.86707305908,4.540606534147794,win,True
+13_lookup-stress_random_short_1024_s731,bytes,random_short,1024,same_alphabet_miss,ns_per_query,GravitEon Lookup,ankerl::unordered_dense,7.72199630737,8.984375,1.1634782823484602,win,True
+13_lookup-stress_random_short_1024_s731,bytes,random_short,1024,interior_miss,ns_per_query,GravitEon Lookup,ankerl::unordered_dense,7.79447555542,8.89415740967,1.1410847781138167,win,True
+13_lookup-stress_random_short_1024_s731,bytes,random_short,1024,mixed,ns_per_query,GravitEon Lookup,ankerl::unordered_dense,10.657119751,16.0022735596,1.5015570748464604,win,True
+13_lookup-stress_random_short_1024_s731,utf16,random_short,1024,hit,ns_per_query,GravitEon Lookup,ankerl::unordered_dense,14.7814750671,24.2310523987,1.6392851382357962,win,True
+13_lookup-stress_random_short_1024_s731,utf16,random_short,1024,hot_hits,ns_per_query,GravitEon Lookup,ankerl::unordered_dense,8.51583480835,14.4642829895,1.6985161543196434,win,True
+13_lookup-stress_random_short_1024_s731,utf16,random_short,1024,append_miss,ns_per_query,GravitEon Lookup,ankerl::unordered_dense,7.46994018555,10.8472824097,1.4521243999628268,win,True
+13_lookup-stress_random_short_1024_s731,utf16,random_short,1024,early_miss,ns_per_query,GravitEon Lookup,ankerl::unordered_dense,2.56242752075,11.0512733459,4.312814023580807,win,True
+13_lookup-stress_random_short_1024_s731,utf16,random_short,1024,same_alphabet_miss,ns_per_query,GravitEon Lookup,ankerl::unordered_dense,7.75890350342,10.60962677,1.367413161579268,win,True
+13_lookup-stress_random_short_1024_s731,utf16,random_short,1024,interior_miss,ns_per_query,GravitEon Lookup,ankerl::unordered_dense,7.76062011719,10.6662750244,1.3744101454951894,win,True
+13_lookup-stress_random_short_1024_s731,utf16,random_short,1024,mixed,ns_per_query,GravitEon Lookup,ankerl::unordered_dense,11.5274429321,17.6997184753,1.5354418650828725,win,True
+13_lookup-stress_random_short_1024_s731,bytes,random_short,1024,,build_ms,GravitEon Lookup,boost::unordered_flat_map,0.0156,0.0171,1.0961538461538463,win,True
+13_lookup-stress_random_short_1024_s731,utf16,random_short,1024,,build_ms,GravitEon Lookup,ankerl::unordered_dense,0.0151,0.0188,1.2450331125827814,win,True
+14_parallel_random_short_1024_s731,bytes,random_short,1024,,ms,GravitEon Sort,std::sort,0.0381,0.1113,2.9212598425196847,win,True
+14_parallel_random_short_1024_s731,bytes,random_short,1024,,ms,GravitEon Parallel Sort,Microsoft PPL Buffered Sort,0.0383,0.1113,2.906005221932115,win,True
+14_parallel_random_short_1024_s731,utf16,random_short,1024,,ms,GravitEon Sort,std::sort,0.0573,0.0732,1.2774869109947644,win,True
+14_parallel_random_short_1024_s731,utf16,random_short,1024,,ms,GravitEon Parallel Sort,Microsoft PPL Sort,0.0579,0.0727,1.2556131260794474,win,True
+15_lookup-stress_tiny_keys_1024_s731,bytes,tiny_keys,1024,hit,ns_per_query,GravitEon Lookup,boost::unordered_flat_map,11.5424156189,18.2799339294,1.583718220947418,win,True
+15_lookup-stress_tiny_keys_1024_s731,bytes,tiny_keys,1024,hot_hits,ns_per_query,GravitEon Lookup,tsl::robin_map,6.63070678711,9.57593917847,1.4441807617078604,win,True
+15_lookup-stress_tiny_keys_1024_s731,bytes,tiny_keys,1024,append_miss,ns_per_query,GravitEon Lookup,ankerl::unordered_dense,6.59484863281,9.48572158813,1.438353192966042,win,True
+15_lookup-stress_tiny_keys_1024_s731,bytes,tiny_keys,1024,early_miss,ns_per_query,GravitEon Lookup,ankerl::unordered_dense,6.42070770264,9.53426361084,1.4849241006438902,win,True
+15_lookup-stress_tiny_keys_1024_s731,bytes,tiny_keys,1024,same_alphabet_miss,ns_per_query,GravitEon Lookup,boost::unordered_flat_map,7.06043243408,9.64822769165,1.3665207877465084,win,True
+15_lookup-stress_tiny_keys_1024_s731,bytes,tiny_keys,1024,interior_miss,ns_per_query,GravitEon Lookup,boost::unordered_flat_map,7.03678131104,9.73691940308,1.383717778439946,win,True
+15_lookup-stress_tiny_keys_1024_s731,bytes,tiny_keys,1024,mixed,ns_per_query,GravitEon Lookup,boost::unordered_flat_map,9.57460403442,13.8488769531,1.4464177216430363,win,True
+15_lookup-stress_tiny_keys_1024_s731,utf16,tiny_keys,1024,hit,ns_per_query,GravitEon Lookup,ankerl::unordered_dense,12.0314598083,17.5809860229,1.4612512781509368,win,True
+15_lookup-stress_tiny_keys_1024_s731,utf16,tiny_keys,1024,hot_hits,ns_per_query,GravitEon Lookup,ankerl::unordered_dense,6.97565078735,9.37376022339,1.3437828969863075,win,True
+15_lookup-stress_tiny_keys_1024_s731,utf16,tiny_keys,1024,append_miss,ns_per_query,GravitEon Lookup,ankerl::unordered_dense,6.97946548462,8.51535797119,1.220058755209049,win,True
+15_lookup-stress_tiny_keys_1024_s731,utf16,tiny_keys,1024,early_miss,ns_per_query,GravitEon Lookup,ankerl::unordered_dense,6.78462982178,8.53977203369,1.2586938798452416,win,True
+15_lookup-stress_tiny_keys_1024_s731,utf16,tiny_keys,1024,same_alphabet_miss,ns_per_query,GravitEon Lookup,ankerl::unordered_dense,7.7112197876,8.60748291016,1.1162284498752366,win,True
+15_lookup-stress_tiny_keys_1024_s731,utf16,tiny_keys,1024,interior_miss,ns_per_query,GravitEon Lookup,ankerl::unordered_dense,7.91168212891,8.71047973633,1.1009643201540065,win,True
+15_lookup-stress_tiny_keys_1024_s731,utf16,tiny_keys,1024,mixed,ns_per_query,GravitEon Lookup,ankerl::unordered_dense,10.0248336792,13.3513450623,1.3318270895607978,win,True
+15_lookup-stress_tiny_keys_1024_s731,bytes,tiny_keys,1024,,build_ms,GravitEon Lookup,boost::unordered_flat_map,0.0151,0.0147,0.9735099337748344,near,True
+15_lookup-stress_tiny_keys_1024_s731,utf16,tiny_keys,1024,,build_ms,GravitEon Lookup,ankerl::unordered_dense,0.015,0.0161,1.0733333333333333,win,True
+16_parallel_tiny_keys_1024_s731,bytes,tiny_keys,1024,,ms,GravitEon Sort,std::sort,0.0201,0.0799,3.9751243781094527,win,True
+16_parallel_tiny_keys_1024_s731,bytes,tiny_keys,1024,,ms,GravitEon Parallel Sort,std::sort,0.0189,0.0799,4.227513227513227,win,True
+16_parallel_tiny_keys_1024_s731,utf16,tiny_keys,1024,,ms,GravitEon Sort,std::sort,0.0187,0.0453,2.4224598930481283,win,True
+16_parallel_tiny_keys_1024_s731,utf16,tiny_keys,1024,,ms,GravitEon Parallel Sort,Microsoft PPL Sort,0.0185,0.045,2.4324324324324325,win,True
+17_lookup-stress_length_boundaries_1024_s731,bytes,length_boundaries,1024,hit,ns_per_query,GravitEon Lookup,boost::unordered_flat_map,15.851688385,22.6709365845,1.4301906543881384,win,True
+17_lookup-stress_length_boundaries_1024_s731,bytes,length_boundaries,1024,hot_hits,ns_per_query,GravitEon Lookup,ankerl::unordered_dense,8.60939025879,12.5049591064,1.452479064197689,win,True
+17_lookup-stress_length_boundaries_1024_s731,bytes,length_boundaries,1024,append_miss,ns_per_query,GravitEon Lookup,ankerl::unordered_dense,9.85240936279,14.0868186951,1.4297841448105342,win,True
+17_lookup-stress_length_boundaries_1024_s731,bytes,length_boundaries,1024,early_miss,ns_per_query,GravitEon Lookup,ankerl::unordered_dense,2.61964797974,14.0907287598,5.3788634460720575,win,True
+17_lookup-stress_length_boundaries_1024_s731,bytes,length_boundaries,1024,same_alphabet_miss,ns_per_query,GravitEon Lookup,ankerl::unordered_dense,10.1510047913,13.7048721313,1.3501000554197227,win,True
+17_lookup-stress_length_boundaries_1024_s731,bytes,length_boundaries,1024,interior_miss,ns_per_query,GravitEon Lookup,ankerl::unordered_dense,9.92555618286,13.4794235229,1.3580522113387474,win,True
+17_lookup-stress_length_boundaries_1024_s731,bytes,length_boundaries,1024,mixed,ns_per_query,GravitEon Lookup,boost::unordered_flat_map,13.4320259094,19.6361541748,1.46189073094761,win,True
+17_lookup-stress_length_boundaries_1024_s731,utf16,length_boundaries,1024,hit,ns_per_query,GravitEon Lookup,ankerl::unordered_dense,17.1104431152,34.4338417053,2.012445935705243,win,True
+17_lookup-stress_length_boundaries_1024_s731,utf16,length_boundaries,1024,hot_hits,ns_per_query,GravitEon Lookup,ankerl::unordered_dense,10.671710968,26.2704849243,2.4616938186457826,win,True
+17_lookup-stress_length_boundaries_1024_s731,utf16,length_boundaries,1024,append_miss,ns_per_query,GravitEon Lookup,ankerl::unordered_dense,10.6915473938,15.1961326599,1.4213221061632477,win,True
+17_lookup-stress_length_boundaries_1024_s731,utf16,length_boundaries,1024,early_miss,ns_per_query,GravitEon Lookup,ankerl::unordered_dense,2.96602249146,15.3552055359,5.177036108158953,win,True
+17_lookup-stress_length_boundaries_1024_s731,utf16,length_boundaries,1024,same_alphabet_miss,ns_per_query,GravitEon Lookup,ankerl::unordered_dense,10.4432106018,14.3761634827,1.3766038080494243,win,True
+17_lookup-stress_length_boundaries_1024_s731,utf16,length_boundaries,1024,interior_miss,ns_per_query,GravitEon Lookup,ankerl::unordered_dense,10.5312347412,14.2663955688,1.3546745390630606,win,True
+17_lookup-stress_length_boundaries_1024_s731,utf16,length_boundaries,1024,mixed,ns_per_query,GravitEon Lookup,ankerl::unordered_dense,14.4827842712,25.1728057861,1.738119225883785,win,True
+17_lookup-stress_length_boundaries_1024_s731,bytes,length_boundaries,1024,,build_ms,GravitEon Lookup,boost::unordered_flat_map,0.0169,0.0205,1.2130177514792901,win,True
+17_lookup-stress_length_boundaries_1024_s731,utf16,length_boundaries,1024,,build_ms,GravitEon Lookup,ankerl::unordered_dense,0.0168,0.0224,1.3333333333333335,win,True
+18_parallel_length_boundaries_1024_s731,bytes,length_boundaries,1024,,ms,GravitEon Sort,std::sort,0.038,0.1163,3.060526315789474,win,True
+18_parallel_length_boundaries_1024_s731,bytes,length_boundaries,1024,,ms,GravitEon Parallel Sort,std::sort,0.0379,0.1163,3.0686015831134563,win,True
+18_parallel_length_boundaries_1024_s731,utf16,length_boundaries,1024,,ms,GravitEon Sort,std::sort,0.0544,0.068,1.2500000000000002,win,True
+18_parallel_length_boundaries_1024_s731,utf16,length_boundaries,1024,,ms,GravitEon Parallel Sort,std::sort,0.0541,0.068,1.256931608133087,win,True
+19_lookup-stress_random_short_32767_s731,bytes,random_short,32767,hit,ns_per_query,GravitEon Lookup,boost::unordered_flat_map,20.8262443542,23.6770629883,1.1368858727293805,win,True
+19_lookup-stress_random_short_32767_s731,bytes,random_short,32767,hot_hits,ns_per_query,GravitEon Lookup,ankerl::unordered_dense,6.8172454834,10.5132102966,1.5421492921444122,win,True
+19_lookup-stress_random_short_32767_s731,bytes,random_short,32767,append_miss,ns_per_query,GravitEon Lookup,ankerl::unordered_dense,7.77473449707,10.6164932251,1.3655119964676543,win,True
+19_lookup-stress_random_short_32767_s731,bytes,random_short,32767,early_miss,ns_per_query,GravitEon Lookup,ankerl::unordered_dense,1.93748474121,10.5742454529,5.457718054747704,win,True
+19_lookup-stress_random_short_32767_s731,bytes,random_short,32767,same_alphabet_miss,ns_per_query,GravitEon Lookup,ankerl::unordered_dense,8.56008529663,10.5639457703,1.2340935170890057,win,True
+19_lookup-stress_random_short_32767_s731,bytes,random_short,32767,interior_miss,ns_per_query,GravitEon Lookup,ankerl::unordered_dense,8.36639404297,10.5021476746,1.2552776764590237,win,True
+19_lookup-stress_random_short_32767_s731,bytes,random_short,32767,mixed,ns_per_query,GravitEon Lookup,boost::unordered_flat_map,15.062046051,18.5357093811,1.2306236030840827,win,True
+19_lookup-stress_random_short_32767_s731,utf16,random_short,32767,hit,ns_per_query,GravitEon Lookup,ankerl::unordered_dense,22.8995323181,33.7382316589,1.4733153144893265,win,True
+19_lookup-stress_random_short_32767_s731,utf16,random_short,32767,hot_hits,ns_per_query,GravitEon Lookup,ankerl::unordered_dense,8.62331390381,14.2588615417,1.653524584719115,win,True
+19_lookup-stress_random_short_32767_s731,utf16,random_short,32767,append_miss,ns_per_query,GravitEon Lookup,absl::flat_hash_map,8.77313613892,11.9010925293,1.3565379974560683,win,True
+19_lookup-stress_random_short_32767_s731,utf16,random_short,32767,early_miss,ns_per_query,GravitEon Lookup,absl::flat_hash_map,2.55575180054,11.8321418762,4.629613045249546,win,True
+19_lookup-stress_random_short_32767_s731,utf16,random_short,32767,same_alphabet_miss,ns_per_query,GravitEon Lookup,absl::flat_hash_map,8.76035690308,11.54088974,1.3173994927013088,win,True
+19_lookup-stress_random_short_32767_s731,utf16,random_short,32767,interior_miss,ns_per_query,GravitEon Lookup,absl::flat_hash_map,9.06686782837,11.4924430847,1.267520747213325,win,True
+19_lookup-stress_random_short_32767_s731,utf16,random_short,32767,mixed,ns_per_query,GravitEon Lookup,ankerl::unordered_dense,18.2544708252,25.3541946411,1.3889306835506263,win,True
+19_lookup-stress_random_short_32767_s731,bytes,random_short,32767,,build_ms,GravitEon Lookup,ankerl::unordered_dense,0.4564,0.6648,1.4566170026292726,win,True
+19_lookup-stress_random_short_32767_s731,utf16,random_short,32767,,build_ms,GravitEon Lookup,ankerl::unordered_dense,0.4935,0.6704,1.3584599797365755,win,True
+20_parallel_random_short_32767_s731,bytes,random_short,32767,,ms,GravitEon Sort,std::sort,1.2225,5.6075,4.586912065439673,win,True
+20_parallel_random_short_32767_s731,bytes,random_short,32767,,ms,GravitEon Parallel Sort,Microsoft PPL Buffered Sort,1.2181,1.5563,1.2776455135046385,win,True
+20_parallel_random_short_32767_s731,utf16,random_short,32767,,ms,GravitEon Sort,std::sort,1.8436,3.8503,2.0884682143632025,win,True
+20_parallel_random_short_32767_s731,utf16,random_short,32767,,ms,GravitEon Parallel Sort,Microsoft PPL Buffered Sort,1.8191,1.0898,0.5990874608322798,loss,True
+21_lookup-stress_tiny_keys_32767_s731,bytes,tiny_keys,32767,hit,ns_per_query,GravitEon Lookup,boost::unordered_flat_map,18.5678482056,20.1657295227,1.0860563539407913,win,True
+21_lookup-stress_tiny_keys_32767_s731,bytes,tiny_keys,32767,hot_hits,ns_per_query,GravitEon Lookup,tsl::robin_map,6.84356689453,9.39970016479,1.3735089186171459,win,True
+21_lookup-stress_tiny_keys_32767_s731,bytes,tiny_keys,32767,append_miss,ns_per_query,GravitEon Lookup,boost::unordered_flat_map,7.42444992065,10.5180740356,1.4166805821324953,win,True
+21_lookup-stress_tiny_keys_32767_s731,bytes,tiny_keys,32767,early_miss,ns_per_query,GravitEon Lookup,absl::flat_hash_map,7.31945037842,10.4207992554,1.4237133550524141,win,True
+21_lookup-stress_tiny_keys_32767_s731,bytes,tiny_keys,32767,same_alphabet_miss,ns_per_query,GravitEon Lookup,boost::unordered_flat_map,7.89279937744,9.93022918701,1.258137792706804,win,True
+21_lookup-stress_tiny_keys_32767_s731,bytes,tiny_keys,32767,interior_miss,ns_per_query,GravitEon Lookup,boost::unordered_flat_map,7.85636901855,10.0061416626,1.2736343772770962,win,True
+21_lookup-stress_tiny_keys_32767_s731,bytes,tiny_keys,32767,mixed,ns_per_query,GravitEon Lookup,boost::unordered_flat_map,13.9741897583,15.6384468079,1.119095065859651,win,True
+21_lookup-stress_tiny_keys_32767_s731,utf16,tiny_keys,32767,hit,ns_per_query,GravitEon Lookup,tsl::robin_map,19.7672843933,24.0735054016,1.2178458569533996,win,True
+21_lookup-stress_tiny_keys_32767_s731,utf16,tiny_keys,32767,hot_hits,ns_per_query,GravitEon Lookup,ankerl::unordered_dense,7.15093612671,9.29279327393,1.2995212248113626,win,True
+21_lookup-stress_tiny_keys_32767_s731,utf16,tiny_keys,32767,append_miss,ns_per_query,GravitEon Lookup,ankerl::unordered_dense,8.1109046936,10.8874320984,1.3423203094706377,win,True
+21_lookup-stress_tiny_keys_32767_s731,utf16,tiny_keys,32767,early_miss,ns_per_query,GravitEon Lookup,ankerl::unordered_dense,7.90119171143,10.8552932739,1.3738805069362567,win,True
+21_lookup-stress_tiny_keys_32767_s731,utf16,tiny_keys,32767,same_alphabet_miss,ns_per_query,GravitEon Lookup,ankerl::unordered_dense,8.67233276367,10.6715202332,1.230524764675194,win,True
+21_lookup-stress_tiny_keys_32767_s731,utf16,tiny_keys,32767,interior_miss,ns_per_query,GravitEon Lookup,ankerl::unordered_dense,8.65869522095,10.6682777405,1.232088376859339,win,True
+21_lookup-stress_tiny_keys_32767_s731,utf16,tiny_keys,32767,mixed,ns_per_query,GravitEon Lookup,ankerl::unordered_dense,15.936088562,21.2746620178,1.3349989826568838,win,True
+21_lookup-stress_tiny_keys_32767_s731,bytes,tiny_keys,32767,,build_ms,GravitEon Lookup,ankerl::unordered_dense,0.4547,0.6556,1.4418297778755222,win,True
+21_lookup-stress_tiny_keys_32767_s731,utf16,tiny_keys,32767,,build_ms,GravitEon Lookup,ankerl::unordered_dense,0.4216,0.5971,1.4162713472485768,win,True
+22_parallel_tiny_keys_32767_s731,bytes,tiny_keys,32767,,ms,GravitEon Sort,std::sort,0.638,4.0299,6.316457680250783,win,True
+22_parallel_tiny_keys_32767_s731,bytes,tiny_keys,32767,,ms,GravitEon Parallel Sort,Microsoft PPL Buffered Sort,0.6216,1.1988,1.9285714285714286,win,True
+22_parallel_tiny_keys_32767_s731,utf16,tiny_keys,32767,,ms,GravitEon Sort,std::sort,0.6803,2.3992,3.526679406144348,win,True
+22_parallel_tiny_keys_32767_s731,utf16,tiny_keys,32767,,ms,GravitEon Parallel Sort,Microsoft PPL Buffered Sort,0.683,0.7756,1.1355783308931184,win,True
+23_lookup-stress_length_boundaries_32767_s731,bytes,length_boundaries,32767,hit,ns_per_query,GravitEon Lookup,boost::unordered_flat_map,23.1324195862,26.1288642883,1.129534426389515,win,True
+23_lookup-stress_length_boundaries_32767_s731,bytes,length_boundaries,32767,hot_hits,ns_per_query,GravitEon Lookup,ankerl::unordered_dense,8.65392684937,12.6537322998,1.462195431051186,win,True
+23_lookup-stress_length_boundaries_32767_s731,bytes,length_boundaries,32767,append_miss,ns_per_query,GravitEon Lookup,ankerl::unordered_dense,10.2294921875,15.1726722717,1.483228296536592,win,True
+23_lookup-stress_length_boundaries_32767_s731,bytes,length_boundaries,32767,early_miss,ns_per_query,GravitEon Lookup,ankerl::unordered_dense,2.69336700439,14.9747848511,5.559875362953562,win,True
+23_lookup-stress_length_boundaries_32767_s731,bytes,length_boundaries,32767,same_alphabet_miss,ns_per_query,GravitEon Lookup,ankerl::unordered_dense,11.0153198242,14.5357131958,1.3195906635289794,win,True
+23_lookup-stress_length_boundaries_32767_s731,bytes,length_boundaries,32767,interior_miss,ns_per_query,GravitEon Lookup,ankerl::unordered_dense,11.053276062,14.7386550903,1.333419613119946,win,True
+23_lookup-stress_length_boundaries_32767_s731,bytes,length_boundaries,32767,mixed,ns_per_query,GravitEon Lookup,boost::unordered_flat_map,18.2521820068,21.9122886658,1.2005298137853544,win,True
+23_lookup-stress_length_boundaries_32767_s731,utf16,length_boundaries,32767,hit,ns_per_query,GravitEon Lookup,ankerl::unordered_dense,25.0652313232,45.6577301025,1.821556302982925,win,True
+23_lookup-stress_length_boundaries_32767_s731,utf16,length_boundaries,32767,hot_hits,ns_per_query,GravitEon Lookup,ankerl::unordered_dense,10.6342315674,26.9582748413,2.5350468127798274,win,True
+23_lookup-stress_length_boundaries_32767_s731,utf16,length_boundaries,32767,append_miss,ns_per_query,GravitEon Lookup,ankerl::unordered_dense,10.9532356262,16.0453796387,1.4648986095322971,win,True
+23_lookup-stress_length_boundaries_32767_s731,utf16,length_boundaries,32767,early_miss,ns_per_query,GravitEon Lookup,ankerl::unordered_dense,3.01094055176,16.1058425903,5.349106803482244,win,True
+23_lookup-stress_length_boundaries_32767_s731,utf16,length_boundaries,32767,same_alphabet_miss,ns_per_query,GravitEon Lookup,ankerl::unordered_dense,11.3284111023,15.6009674072,1.3771540656776258,win,True
+23_lookup-stress_length_boundaries_32767_s731,utf16,length_boundaries,32767,interior_miss,ns_per_query,GravitEon Lookup,ankerl::unordered_dense,11.2889289856,15.6517028809,1.3864648188384472,win,True
+23_lookup-stress_length_boundaries_32767_s731,utf16,length_boundaries,32767,mixed,ns_per_query,GravitEon Lookup,ankerl::unordered_dense,19.8804855347,31.6850662231,1.593777283145119,win,True
+23_lookup-stress_length_boundaries_32767_s731,bytes,length_boundaries,32767,,build_ms,GravitEon Lookup,ankerl::unordered_dense,0.5282,0.7682,1.4543733434305188,win,True
+23_lookup-stress_length_boundaries_32767_s731,utf16,length_boundaries,32767,,build_ms,GravitEon Lookup,ankerl::unordered_dense,0.5898,0.7947,1.3474059003051881,win,True
+24_parallel_length_boundaries_32767_s731,bytes,length_boundaries,32767,,ms,GravitEon Sort,std::sort,1.2379,5.4274,4.384360610711688,win,True
+24_parallel_length_boundaries_32767_s731,bytes,length_boundaries,32767,,ms,GravitEon Parallel Sort,Microsoft PPL Buffered Sort,1.2475,1.5983,1.2812024048096193,win,True
+24_parallel_length_boundaries_32767_s731,utf16,length_boundaries,32767,,ms,GravitEon Sort,std::sort,1.7732,3.626,2.0448905932776897,win,True
+24_parallel_length_boundaries_32767_s731,utf16,length_boundaries,32767,,ms,GravitEon Parallel Sort,Microsoft PPL Buffered Sort,1.8272,1.1381,0.6228655866900175,loss,True
+25_lookup-stress_random_short_32768_s731,bytes,random_short,32768,hit,ns_per_query,GravitEon Lookup,boost::unordered_flat_map,21.2345123291,23.7983703613,1.120740141919175,win,True
+25_lookup-stress_random_short_32768_s731,bytes,random_short,32768,hot_hits,ns_per_query,GravitEon Lookup,ankerl::unordered_dense,6.75191879272,10.3064537048,1.5264481136699306,win,True
+25_lookup-stress_random_short_32768_s731,bytes,random_short,32768,append_miss,ns_per_query,GravitEon Lookup,ankerl::unordered_dense,8.10136795044,10.5725288391,1.3050300768681649,win,True
+25_lookup-stress_random_short_32768_s731,bytes,random_short,32768,early_miss,ns_per_query,GravitEon Lookup,ankerl::unordered_dense,1.96447372437,10.5394363403,5.365017719277443,win,True
+25_lookup-stress_random_short_32768_s731,bytes,random_short,32768,same_alphabet_miss,ns_per_query,GravitEon Lookup,ankerl::unordered_dense,8.41960906982,10.5918884277,1.258002401283275,win,True
+25_lookup-stress_random_short_32768_s731,bytes,random_short,32768,interior_miss,ns_per_query,GravitEon Lookup,ankerl::unordered_dense,8.47816467285,10.5729103088,1.2470753655750633,win,True
+25_lookup-stress_random_short_32768_s731,bytes,random_short,32768,mixed,ns_per_query,GravitEon Lookup,boost::unordered_flat_map,14.9209022522,18.6491012573,1.2498641799325707,win,True
+25_lookup-stress_random_short_32768_s731,utf16,random_short,32768,hit,ns_per_query,GravitEon Lookup,ankerl::unordered_dense,23.5771179199,33.8376998901,1.435192376144485,win,True
+25_lookup-stress_random_short_32768_s731,utf16,random_short,32768,hot_hits,ns_per_query,GravitEon Lookup,ankerl::unordered_dense,8.63494873047,14.1765594482,1.6417653295584038,win,True
+25_lookup-stress_random_short_32768_s731,utf16,random_short,32768,append_miss,ns_per_query,GravitEon Lookup,absl::flat_hash_map,8.69140625,11.9352340698,1.3732224367949664,win,True
+25_lookup-stress_random_short_32768_s731,utf16,random_short,32768,early_miss,ns_per_query,GravitEon Lookup,absl::flat_hash_map,2.52618789673,11.8316650391,4.683604515093824,win,True
+25_lookup-stress_random_short_32768_s731,utf16,random_short,32768,same_alphabet_miss,ns_per_query,GravitEon Lookup,absl::flat_hash_map,9.17072296143,11.536693573,1.257991722301583,win,True
+25_lookup-stress_random_short_32768_s731,utf16,random_short,32768,interior_miss,ns_per_query,GravitEon Lookup,absl::flat_hash_map,8.98532867432,11.642742157,1.295750281264042,win,True
+25_lookup-stress_random_short_32768_s731,utf16,random_short,32768,mixed,ns_per_query,GravitEon Lookup,ankerl::unordered_dense,18.3615684509,25.3259658813,1.3792920767647516,win,True
+25_lookup-stress_random_short_32768_s731,bytes,random_short,32768,,build_ms,GravitEon Lookup,ankerl::unordered_dense,0.4674,0.6377,1.3643560119811726,win,True
+25_lookup-stress_random_short_32768_s731,utf16,random_short,32768,,build_ms,GravitEon Lookup,ankerl::unordered_dense,0.4928,0.6998,1.4200487012987013,win,True
+26_parallel_random_short_32768_s731,bytes,random_short,32768,,ms,GravitEon Sort,std::sort,1.2634,5.4954,4.349691309165743,win,True
+26_parallel_random_short_32768_s731,bytes,random_short,32768,,ms,GravitEon Parallel Sort,Microsoft PPL Buffered Sort,0.5498,1.5322,2.786831575118225,win,True
+26_parallel_random_short_32768_s731,utf16,random_short,32768,,ms,GravitEon Sort,std::sort,1.8285,3.9057,2.1360131255127155,win,True
+26_parallel_random_short_32768_s731,utf16,random_short,32768,,ms,GravitEon Parallel Sort,Microsoft PPL Buffered Sort,0.7566,1.1614,1.5350251123446998,win,True
+27_lookup-stress_tiny_keys_32768_s731,bytes,tiny_keys,32768,hit,ns_per_query,GravitEon Lookup,boost::unordered_flat_map,18.7064170837,20.2338218689,1.0816513808264716,win,True
+27_lookup-stress_tiny_keys_32768_s731,bytes,tiny_keys,32768,hot_hits,ns_per_query,GravitEon Lookup,tsl::robin_map,6.92882537842,9.58299636841,1.3830621851513942,win,True
+27_lookup-stress_tiny_keys_32768_s731,bytes,tiny_keys,32768,append_miss,ns_per_query,GravitEon Lookup,absl::flat_hash_map,7.43446350098,10.5246543884,1.4156575504086686,win,True
+27_lookup-stress_tiny_keys_32768_s731,bytes,tiny_keys,32768,early_miss,ns_per_query,GravitEon Lookup,boost::unordered_flat_map,7.18269348145,10.5509757996,1.4689441818516846,win,True
+27_lookup-stress_tiny_keys_32768_s731,bytes,tiny_keys,32768,same_alphabet_miss,ns_per_query,GravitEon Lookup,boost::unordered_flat_map,7.81116485596,9.90114212036,1.2675628159102703,win,True
+27_lookup-stress_tiny_keys_32768_s731,bytes,tiny_keys,32768,interior_miss,ns_per_query,GravitEon Lookup,boost::unordered_flat_map,7.82833099365,9.94777679443,1.2707404429499982,win,True
+27_lookup-stress_tiny_keys_32768_s731,bytes,tiny_keys,32768,mixed,ns_per_query,GravitEon Lookup,boost::unordered_flat_map,13.9430046082,15.5614852905,1.1160783294404246,win,True
+27_lookup-stress_tiny_keys_32768_s731,utf16,tiny_keys,32768,hit,ns_per_query,GravitEon Lookup,tsl::robin_map,19.863319397,23.8570213318,1.201059140971331,win,True
+27_lookup-stress_tiny_keys_32768_s731,utf16,tiny_keys,32768,hot_hits,ns_per_query,GravitEon Lookup,ankerl::unordered_dense,7.05032348633,9.39435958862,1.3324721350495328,win,True
+27_lookup-stress_tiny_keys_32768_s731,utf16,tiny_keys,32768,append_miss,ns_per_query,GravitEon Lookup,ankerl::unordered_dense,8.26120376587,11.2248420715,1.3587417027375421,win,True
+27_lookup-stress_tiny_keys_32768_s731,utf16,tiny_keys,32768,early_miss,ns_per_query,GravitEon Lookup,ankerl::unordered_dense,8.09888839722,10.8125686646,1.335068238291997,win,True
+27_lookup-stress_tiny_keys_32768_s731,utf16,tiny_keys,32768,same_alphabet_miss,ns_per_query,GravitEon Lookup,ankerl::unordered_dense,8.56533050537,10.8045578003,1.261429175853299,win,True
+27_lookup-stress_tiny_keys_32768_s731,utf16,tiny_keys,32768,interior_miss,ns_per_query,GravitEon Lookup,ankerl::unordered_dense,8.57734680176,10.7334136963,1.2513675783865466,win,True
+27_lookup-stress_tiny_keys_32768_s731,utf16,tiny_keys,32768,mixed,ns_per_query,GravitEon Lookup,ankerl::unordered_dense,16.0665512085,21.3191986084,1.3269306107910133,win,True
+27_lookup-stress_tiny_keys_32768_s731,bytes,tiny_keys,32768,,build_ms,GravitEon Lookup,ankerl::unordered_dense,0.4475,0.6606,1.4762011173184357,win,True
+27_lookup-stress_tiny_keys_32768_s731,utf16,tiny_keys,32768,,build_ms,GravitEon Lookup,ankerl::unordered_dense,0.4209,0.5868,1.3941553813257306,win,True
+28_parallel_tiny_keys_32768_s731,bytes,tiny_keys,32768,,ms,GravitEon Sort,std::sort,0.6291,3.9614,6.296932125258305,win,True
+28_parallel_tiny_keys_32768_s731,bytes,tiny_keys,32768,,ms,GravitEon Parallel Sort,Microsoft PPL Buffered Sort,0.4568,1.1916,2.608581436077058,win,True
+28_parallel_tiny_keys_32768_s731,utf16,tiny_keys,32768,,ms,GravitEon Sort,std::sort,0.6753,2.3964,3.5486450466459347,win,True
+28_parallel_tiny_keys_32768_s731,utf16,tiny_keys,32768,,ms,GravitEon Parallel Sort,Microsoft PPL Buffered Sort,0.5163,0.7887,1.5276002324230098,win,True
+29_lookup-stress_length_boundaries_32768_s731,bytes,length_boundaries,32768,hit,ns_per_query,GravitEon Lookup,boost::unordered_flat_map,22.9756355286,25.9821891785,1.1308583454049594,win,True
+29_lookup-stress_length_boundaries_32768_s731,bytes,length_boundaries,32768,hot_hits,ns_per_query,GravitEon Lookup,ankerl::unordered_dense,8.7272644043,12.6662254333,1.4513397150038492,win,True
+29_lookup-stress_length_boundaries_32768_s731,bytes,length_boundaries,32768,append_miss,ns_per_query,GravitEon Lookup,ankerl::unordered_dense,10.0133895874,14.8465156555,1.482666336500239,win,True
+29_lookup-stress_length_boundaries_32768_s731,bytes,length_boundaries,32768,early_miss,ns_per_query,GravitEon Lookup,ankerl::unordered_dense,2.66885757446,15.0857925415,5.652528140079698,win,True
+29_lookup-stress_length_boundaries_32768_s731,bytes,length_boundaries,32768,same_alphabet_miss,ns_per_query,GravitEon Lookup,ankerl::unordered_dense,11.1518859863,14.5706176758,1.306560853805346,win,True
+29_lookup-stress_length_boundaries_32768_s731,bytes,length_boundaries,32768,interior_miss,ns_per_query,GravitEon Lookup,ankerl::unordered_dense,10.8153343201,14.6077156067,1.3506485490283886,win,True
+29_lookup-stress_length_boundaries_32768_s731,bytes,length_boundaries,32768,mixed,ns_per_query,GravitEon Lookup,boost::unordered_flat_map,17.9807662964,21.6734886169,1.2053706866341583,win,True
+29_lookup-stress_length_boundaries_32768_s731,utf16,length_boundaries,32768,hit,ns_per_query,GravitEon Lookup,ankerl::unordered_dense,25.2131462097,45.5207824707,1.8054384047155227,win,True
+29_lookup-stress_length_boundaries_32768_s731,utf16,length_boundaries,32768,hot_hits,ns_per_query,GravitEon Lookup,ankerl::unordered_dense,10.6715202332,26.5155792236,2.484704957135141,win,True
+29_lookup-stress_length_boundaries_32768_s731,utf16,length_boundaries,32768,append_miss,ns_per_query,GravitEon Lookup,ankerl::unordered_dense,10.8487129211,15.8974647522,1.4653779547692265,win,True
+29_lookup-stress_length_boundaries_32768_s731,utf16,length_boundaries,32768,early_miss,ns_per_query,GravitEon Lookup,ankerl::unordered_dense,2.99940109253,16.180229187,5.394486661786186,win,True
+29_lookup-stress_length_boundaries_32768_s731,utf16,length_boundaries,32768,same_alphabet_miss,ns_per_query,GravitEon Lookup,ankerl::unordered_dense,11.4062309265,15.7238960266,1.3785356554608066,win,True
+29_lookup-stress_length_boundaries_32768_s731,utf16,length_boundaries,32768,interior_miss,ns_per_query,GravitEon Lookup,ankerl::unordered_dense,11.3556861877,15.6165122986,1.375215204125238,win,True
+29_lookup-stress_length_boundaries_32768_s731,utf16,length_boundaries,32768,mixed,ns_per_query,GravitEon Lookup,ankerl::unordered_dense,19.8866844177,31.9345474243,1.6058256245006275,win,True
+29_lookup-stress_length_boundaries_32768_s731,bytes,length_boundaries,32768,,build_ms,GravitEon Lookup,ankerl::unordered_dense,0.5484,0.7851,1.4316192560175056,win,True
+29_lookup-stress_length_boundaries_32768_s731,utf16,length_boundaries,32768,,build_ms,GravitEon Lookup,ankerl::unordered_dense,0.5765,0.7965,1.3816131830008673,win,True
+30_parallel_length_boundaries_32768_s731,bytes,length_boundaries,32768,,ms,GravitEon Sort,std::sort,1.2268,5.5634,4.534887512226932,win,True
+30_parallel_length_boundaries_32768_s731,bytes,length_boundaries,32768,,ms,GravitEon Parallel Sort,Microsoft PPL Buffered Sort,0.5906,1.5396,2.6068405011852356,win,True
+30_parallel_length_boundaries_32768_s731,utf16,length_boundaries,32768,,ms,GravitEon Sort,std::sort,1.7591,3.7025,2.104769484395429,win,True
+30_parallel_length_boundaries_32768_s731,utf16,length_boundaries,32768,,ms,GravitEon Parallel Sort,Microsoft PPL Buffered Sort,0.7283,1.0711,1.4706851572154331,win,True
+31_lookup-stress_random_short_32769_s731,bytes,random_short,32769,hit,ns_per_query,GravitEon Lookup,boost::unordered_flat_map,20.5171585083,23.5018730164,1.1454740678097586,win,True
+31_lookup-stress_random_short_32769_s731,bytes,random_short,32769,hot_hits,ns_per_query,GravitEon Lookup,ankerl::unordered_dense,6.68020248413,10.2507591248,1.5344982654571457,win,True
+31_lookup-stress_random_short_32769_s731,bytes,random_short,32769,append_miss,ns_per_query,GravitEon Lookup,ankerl::unordered_dense,7.88583755493,10.4463577271,1.3246985693446394,win,True
+31_lookup-stress_random_short_32769_s731,bytes,random_short,32769,early_miss,ns_per_query,GravitEon Lookup,ankerl::unordered_dense,1.95989608765,10.5396270752,5.377645856642057,win,True
+31_lookup-stress_random_short_32769_s731,bytes,random_short,32769,same_alphabet_miss,ns_per_query,GravitEon Lookup,ankerl::unordered_dense,8.65993499756,10.6991767883,1.2354800343552892,win,True
+31_lookup-stress_random_short_32769_s731,bytes,random_short,32769,interior_miss,ns_per_query,GravitEon Lookup,ankerl::unordered_dense,8.44564437866,10.4926109314,1.2423694937845315,win,True
+31_lookup-stress_random_short_32769_s731,bytes,random_short,32769,mixed,ns_per_query,GravitEon Lookup,boost::unordered_flat_map,15.2601242065,18.5153961182,1.2133188346077437,win,True
+31_lookup-stress_random_short_32769_s731,utf16,random_short,32769,hit,ns_per_query,GravitEon Lookup,ankerl::unordered_dense,23.037815094,33.8152885437,1.467816648658965,win,True
+31_lookup-stress_random_short_32769_s731,utf16,random_short,32769,hot_hits,ns_per_query,GravitEon Lookup,ankerl::unordered_dense,8.66641998291,14.2240524292,1.6412835354448014,win,True
+31_lookup-stress_random_short_32769_s731,utf16,random_short,32769,append_miss,ns_per_query,GravitEon Lookup,absl::flat_hash_map,8.67366790771,11.8437767029,1.3654865310639919,win,True
+31_lookup-stress_random_short_32769_s731,utf16,random_short,32769,early_miss,ns_per_query,GravitEon Lookup,absl::flat_hash_map,2.54039764404,11.815738678,4.651137472797135,win,True
+31_lookup-stress_random_short_32769_s731,utf16,random_short,32769,same_alphabet_miss,ns_per_query,GravitEon Lookup,absl::flat_hash_map,8.8924407959,11.4011764526,1.2821200291664232,win,True
+31_lookup-stress_random_short_32769_s731,utf16,random_short,32769,interior_miss,ns_per_query,GravitEon Lookup,absl::flat_hash_map,8.91418457031,11.492061615,1.2891882060952606,win,True
+31_lookup-stress_random_short_32769_s731,utf16,random_short,32769,mixed,ns_per_query,GravitEon Lookup,ankerl::unordered_dense,18.2157516479,25.3163337708,1.3898045087652802,win,True
+31_lookup-stress_random_short_32769_s731,bytes,random_short,32769,,build_ms,GravitEon Lookup,ankerl::unordered_dense,0.4644,0.6539,1.4080534022394489,win,True
+31_lookup-stress_random_short_32769_s731,utf16,random_short,32769,,build_ms,GravitEon Lookup,ankerl::unordered_dense,0.5,0.6943,1.3886,win,True
+32_parallel_random_short_32769_s731,bytes,random_short,32769,,ms,GravitEon Sort,std::sort,1.218,5.3674,4.4067323481116585,win,True
+32_parallel_random_short_32769_s731,bytes,random_short,32769,,ms,GravitEon Parallel Sort,Microsoft PPL Sort,0.5638,1.5667,2.7788222774033344,win,True
+32_parallel_random_short_32769_s731,utf16,random_short,32769,,ms,GravitEon Parallel Sort,Microsoft PPL Buffered Sort,0.7222,1.2726,1.7621157574079203,win,True
+32_parallel_random_short_32769_s731,utf16,random_short,32769,,ms,GravitEon Sort,std::sort,1.8101,3.8078,2.1036406828352026,win,True
+33_lookup-stress_tiny_keys_32769_s731,bytes,tiny_keys,32769,hit,ns_per_query,GravitEon Lookup,tsl::robin_map,18.3773994446,19.5965766907,1.0663411191433967,win,True
+33_lookup-stress_tiny_keys_32769_s731,bytes,tiny_keys,32769,hot_hits,ns_per_query,GravitEon Lookup,tsl::robin_map,7.32946395874,9.66873168945,1.319159456118281,win,True
+33_lookup-stress_tiny_keys_32769_s731,bytes,tiny_keys,32769,append_miss,ns_per_query,GravitEon Lookup,absl::flat_hash_map,7.71799087524,10.5109214783,1.361872752664164,win,True
+33_lookup-stress_tiny_keys_32769_s731,bytes,tiny_keys,32769,early_miss,ns_per_query,GravitEon Lookup,boost::unordered_flat_map,7.27005004883,10.5526924133,1.4515295413954254,win,True
+33_lookup-stress_tiny_keys_32769_s731,bytes,tiny_keys,32769,same_alphabet_miss,ns_per_query,GravitEon Lookup,boost::unordered_flat_map,7.85894393921,9.89542007446,1.2591284720952867,win,True
+33_lookup-stress_tiny_keys_32769_s731,bytes,tiny_keys,32769,interior_miss,ns_per_query,GravitEon Lookup,boost::unordered_flat_map,7.74984359741,9.95979309082,1.2851605281619574,win,True
+33_lookup-stress_tiny_keys_32769_s731,bytes,tiny_keys,32769,mixed,ns_per_query,GravitEon Lookup,boost::unordered_flat_map,13.9736175537,15.5648231506,1.1138721301613606,win,True
+33_lookup-stress_tiny_keys_32769_s731,utf16,tiny_keys,32769,hit,ns_per_query,GravitEon Lookup,tsl::robin_map,19.8977470398,21.0971832275,1.0602799998060513,win,True
+33_lookup-stress_tiny_keys_32769_s731,utf16,tiny_keys,32769,hot_hits,ns_per_query,GravitEon Lookup,ankerl::unordered_dense,6.99558258057,9.2885017395,1.3277667202869574,win,True
+33_lookup-stress_tiny_keys_32769_s731,utf16,tiny_keys,32769,append_miss,ns_per_query,GravitEon Lookup,ankerl::unordered_dense,7.9797744751,10.8473777771,1.35935894065027,win,True
+33_lookup-stress_tiny_keys_32769_s731,utf16,tiny_keys,32769,early_miss,ns_per_query,GravitEon Lookup,ankerl::unordered_dense,7.9062461853,10.786151886,1.364257023270358,win,True
+33_lookup-stress_tiny_keys_32769_s731,utf16,tiny_keys,32769,same_alphabet_miss,ns_per_query,GravitEon Lookup,ankerl::unordered_dense,8.69464874268,10.6813430786,1.2284962158583568,win,True
+33_lookup-stress_tiny_keys_32769_s731,utf16,tiny_keys,32769,interior_miss,ns_per_query,GravitEon Lookup,ankerl::unordered_dense,8.64963531494,10.7406616211,1.241747337318175,win,True
+33_lookup-stress_tiny_keys_32769_s731,utf16,tiny_keys,32769,mixed,ns_per_query,GravitEon Lookup,tsl::robin_map,16.0784721375,20.9991455078,1.3060411044170956,win,True
+33_lookup-stress_tiny_keys_32769_s731,bytes,tiny_keys,32769,,build_ms,GravitEon Lookup,ankerl::unordered_dense,0.4467,0.6616,1.4810835012312513,win,True
+33_lookup-stress_tiny_keys_32769_s731,utf16,tiny_keys,32769,,build_ms,GravitEon Lookup,ankerl::unordered_dense,0.4827,0.5888,1.2198052620675368,win,True
+34_parallel_tiny_keys_32769_s731,bytes,tiny_keys,32769,,ms,GravitEon Sort,std::sort,0.6149,3.9248,6.382826475849732,win,True
+34_parallel_tiny_keys_32769_s731,bytes,tiny_keys,32769,,ms,GravitEon Parallel Sort,Microsoft PPL Buffered Sort,0.4494,1.2171,2.7082777036048062,win,True
+34_parallel_tiny_keys_32769_s731,utf16,tiny_keys,32769,,ms,GravitEon Parallel Sort,Microsoft PPL Buffered Sort,0.5237,0.7708,1.4718350200496466,win,True
+34_parallel_tiny_keys_32769_s731,utf16,tiny_keys,32769,,ms,GravitEon Sort,std::sort,0.6611,2.3946,3.6221449099984873,win,True
+35_lookup-stress_length_boundaries_32769_s731,bytes,length_boundaries,32769,hit,ns_per_query,GravitEon Lookup,boost::unordered_flat_map,23.0962753296,26.3363838196,1.1402870568419101,win,True
+35_lookup-stress_length_boundaries_32769_s731,bytes,length_boundaries,32769,hot_hits,ns_per_query,GravitEon Lookup,ankerl::unordered_dense,8.67481231689,12.6226425171,1.455091136960221,win,True
+35_lookup-stress_length_boundaries_32769_s731,bytes,length_boundaries,32769,append_miss,ns_per_query,GravitEon Lookup,ankerl::unordered_dense,10.1268768311,14.928817749,1.4741778731971014,win,True
+35_lookup-stress_length_boundaries_32769_s731,bytes,length_boundaries,32769,early_miss,ns_per_query,GravitEon Lookup,ankerl::unordered_dense,2.64854431152,14.7977828979,5.587138124718612,win,True
+35_lookup-stress_length_boundaries_32769_s731,bytes,length_boundaries,32769,same_alphabet_miss,ns_per_query,GravitEon Lookup,ankerl::unordered_dense,10.9516143799,14.4172668457,1.3164512870504892,win,True
+35_lookup-stress_length_boundaries_32769_s731,bytes,length_boundaries,32769,interior_miss,ns_per_query,GravitEon Lookup,ankerl::unordered_dense,10.9861373901,14.3342018127,1.3047535547495575,win,True
+35_lookup-stress_length_boundaries_32769_s731,bytes,length_boundaries,32769,mixed,ns_per_query,GravitEon Lookup,boost::unordered_flat_map,18.2288169861,22.0377922058,1.2089535060121812,win,True
+35_lookup-stress_length_boundaries_32769_s731,utf16,length_boundaries,32769,hit,ns_per_query,GravitEon Lookup,ankerl::unordered_dense,25.1300811768,45.280456543,1.8018428282994465,win,True
+35_lookup-stress_length_boundaries_32769_s731,utf16,length_boundaries,32769,hot_hits,ns_per_query,GravitEon Lookup,ankerl::unordered_dense,10.7430458069,26.6421318054,2.4799421210964585,win,True
+35_lookup-stress_length_boundaries_32769_s731,utf16,length_boundaries,32769,append_miss,ns_per_query,GravitEon Lookup,ankerl::unordered_dense,10.9515190125,16.2083625793,1.4800104497649933,win,True
+35_lookup-stress_length_boundaries_32769_s731,utf16,length_boundaries,32769,early_miss,ns_per_query,GravitEon Lookup,ankerl::unordered_dense,2.98357009888,16.2048339844,5.431356880296903,win,True
+35_lookup-stress_length_boundaries_32769_s731,utf16,length_boundaries,32769,same_alphabet_miss,ns_per_query,GravitEon Lookup,ankerl::unordered_dense,11.4089012146,15.6892776489,1.3751786744215464,win,True
+35_lookup-stress_length_boundaries_32769_s731,utf16,length_boundaries,32769,interior_miss,ns_per_query,GravitEon Lookup,ankerl::unordered_dense,11.4722251892,15.664768219,1.365451598156117,win,True
+35_lookup-stress_length_boundaries_32769_s731,utf16,length_boundaries,32769,mixed,ns_per_query,GravitEon Lookup,ankerl::unordered_dense,20.0488090515,32.5189590454,1.6219895636627362,win,True
+35_lookup-stress_length_boundaries_32769_s731,bytes,length_boundaries,32769,,build_ms,GravitEon Lookup,ankerl::unordered_dense,0.567,0.7583,1.3373897707231042,win,True
+35_lookup-stress_length_boundaries_32769_s731,utf16,length_boundaries,32769,,build_ms,GravitEon Lookup,ankerl::unordered_dense,0.5678,0.7996,1.4082423388517085,win,True
+36_parallel_length_boundaries_32769_s731,bytes,length_boundaries,32769,,ms,GravitEon Sort,std::sort,1.2742,5.3686,4.213310312352848,win,True
+36_parallel_length_boundaries_32769_s731,bytes,length_boundaries,32769,,ms,GravitEon Parallel Sort,Microsoft PPL Buffered Sort,0.5516,1.5838,2.8712835387962294,win,True
+36_parallel_length_boundaries_32769_s731,utf16,length_boundaries,32769,,ms,GravitEon Parallel Sort,Microsoft PPL Buffered Sort,0.7405,1.1813,1.5952734638757595,win,True
+36_parallel_length_boundaries_32769_s731,utf16,length_boundaries,32769,,ms,GravitEon Sort,std::sort,1.756,3.7491,2.1350227790432803,win,True
+37_lookup-stress_random_short_5000000_s731,bytes,random_short,5000000,hit,ns_per_query,GravitEon Lookup,boost::unordered_flat_map,38.4387969971,36.6992950439,0.9547461916320837,loss,True
+37_lookup-stress_random_short_5000000_s731,bytes,random_short,5000000,hot_hits,ns_per_query,GravitEon Lookup,ankerl::unordered_dense,6.77328109741,10.6238365173,1.5684918969865864,win,True
+37_lookup-stress_random_short_5000000_s731,bytes,random_short,5000000,append_miss,ns_per_query,GravitEon Lookup,boost::unordered_flat_map,11.2544059753,14.4010543823,1.2795925803552792,win,True
+37_lookup-stress_random_short_5000000_s731,bytes,random_short,5000000,early_miss,ns_per_query,GravitEon Lookup,absl::flat_hash_map,1.9552230835,14.5029067993,7.417520241904406,win,True
+37_lookup-stress_random_short_5000000_s731,bytes,random_short,5000000,same_alphabet_miss,ns_per_query,GravitEon Lookup,boost::unordered_flat_map,11.4562988281,13.8833045959,1.2118490277023015,win,True
+37_lookup-stress_random_short_5000000_s731,bytes,random_short,5000000,interior_miss,ns_per_query,GravitEon Lookup,boost::unordered_flat_map,11.6329193115,13.9894485474,1.2025741924961515,win,True
+37_lookup-stress_random_short_5000000_s731,bytes,random_short,5000000,mixed,ns_per_query,GravitEon Lookup,boost::unordered_flat_map,26.6150474548,29.328250885,1.1019424607379642,win,True
+37_lookup-stress_random_short_5000000_s731,utf16,random_short,5000000,hit,ns_per_query,GravitEon Lookup,tsl::robin_map,45.8156585693,56.1120986938,1.2247362680365224,win,True
+37_lookup-stress_random_short_5000000_s731,utf16,random_short,5000000,hot_hits,ns_per_query,GravitEon Lookup,ankerl::unordered_dense,8.93020629883,14.6527290344,1.6408052114450862,win,True
+37_lookup-stress_random_short_5000000_s731,utf16,random_short,5000000,append_miss,ns_per_query,GravitEon Lookup,absl::flat_hash_map,13.0539894104,14.3509864807,1.0993563752446966,win,True
+37_lookup-stress_random_short_5000000_s731,utf16,random_short,5000000,early_miss,ns_per_query,GravitEon Lookup,absl::flat_hash_map,2.57759094238,14.484500885,5.619394701793078,win,True
+37_lookup-stress_random_short_5000000_s731,utf16,random_short,5000000,same_alphabet_miss,ns_per_query,GravitEon Lookup,absl::flat_hash_map,13.5795593262,13.9853477478,1.0298822967559105,near,True
+37_lookup-stress_random_short_5000000_s731,utf16,random_short,5000000,interior_miss,ns_per_query,GravitEon Lookup,absl::flat_hash_map,13.4198188782,14.0654563904,1.0481107471017224,win,True
+37_lookup-stress_random_short_5000000_s731,utf16,random_short,5000000,mixed,ns_per_query,GravitEon Lookup,absl::flat_hash_map,35.8345985413,41.6546821594,1.1624152036025255,win,True
+37_lookup-stress_random_short_5000000_s731,bytes,random_short,5000000,,build_ms,GravitEon Lookup,ankerl::unordered_dense,250.0648,351.5248,1.4057348335311488,win,True
+37_lookup-stress_random_short_5000000_s731,utf16,random_short,5000000,,build_ms,GravitEon Lookup,ankerl::unordered_dense,287.7904,409.8641,1.4241757195514515,win,True
+38_parallel_random_short_5000000_s731,bytes,random_short,5000000,,ms,GravitEon Sort,std::sort,371.7211,2087.063,5.614593844686246,win,True
+38_parallel_random_short_5000000_s731,bytes,random_short,5000000,,ms,GravitEon Parallel Sort,Microsoft PPL Buffered Sort,138.8797,539.8907,3.8874702350307495,win,True
+38_parallel_random_short_5000000_s731,utf16,random_short,5000000,,ms,GravitEon Parallel Sort,Microsoft PPL Buffered Sort,163.0001,430.3138,2.6399603435826116,win,True
+38_parallel_random_short_5000000_s731,utf16,random_short,5000000,,ms,GravitEon Sort,std::sort,451.7548,1456.5303,3.224161204263906,win,True
+39_lookup-stress_tiny_keys_5000000_s731,bytes,tiny_keys,5000000,hit,ns_per_query,GravitEon Lookup,tsl::robin_map,34.9520683289,29.0084838867,0.8299504227826894,loss,True
+39_lookup-stress_tiny_keys_5000000_s731,bytes,tiny_keys,5000000,hot_hits,ns_per_query,GravitEon Lookup,tsl::robin_map,6.72998428345,9.02709960938,1.3413255112020004,win,True
+39_lookup-stress_tiny_keys_5000000_s731,bytes,tiny_keys,5000000,append_miss,ns_per_query,GravitEon Lookup,boost::unordered_flat_map,10.1452827454,12.3649597168,1.2187890694723544,win,True
+39_lookup-stress_tiny_keys_5000000_s731,bytes,tiny_keys,5000000,early_miss,ns_per_query,GravitEon Lookup,boost::unordered_flat_map,10.0168228149,12.4055862427,1.238475160431781,win,True
+39_lookup-stress_tiny_keys_5000000_s731,bytes,tiny_keys,5000000,same_alphabet_miss,ns_per_query,GravitEon Lookup,boost::unordered_flat_map,11.5728378296,12.3603820801,1.068051091883936,win,True
+39_lookup-stress_tiny_keys_5000000_s731,bytes,tiny_keys,5000000,interior_miss,ns_per_query,GravitEon Lookup,boost::unordered_flat_map,11.5377426147,12.4094963074,1.0755566943909214,win,True
+39_lookup-stress_tiny_keys_5000000_s731,bytes,tiny_keys,5000000,mixed,ns_per_query,GravitEon Lookup,tsl::robin_map,26.9286155701,24.2992401123,0.9023575701114206,loss,True
+39_lookup-stress_tiny_keys_5000000_s731,utf16,tiny_keys,5000000,hit,ns_per_query,GravitEon Lookup,tsl::robin_map,38.0924224854,33.9051246643,0.8900753076886905,loss,True
+39_lookup-stress_tiny_keys_5000000_s731,utf16,tiny_keys,5000000,hot_hits,ns_per_query,GravitEon Lookup,tsl::robin_map,7.32498168945,10.0026130676,1.3655478595948616,win,True
+39_lookup-stress_tiny_keys_5000000_s731,utf16,tiny_keys,5000000,append_miss,ns_per_query,GravitEon Lookup,absl::flat_hash_map,10.86769104,13.6593818665,1.2568798483711772,win,True
+39_lookup-stress_tiny_keys_5000000_s731,utf16,tiny_keys,5000000,early_miss,ns_per_query,GravitEon Lookup,absl::flat_hash_map,10.8704566956,13.4936332703,1.241312453391381,win,True
+39_lookup-stress_tiny_keys_5000000_s731,utf16,tiny_keys,5000000,same_alphabet_miss,ns_per_query,GravitEon Lookup,absl::flat_hash_map,11.6278648376,13.275718689,1.1417159447942222,win,True
+39_lookup-stress_tiny_keys_5000000_s731,utf16,tiny_keys,5000000,interior_miss,ns_per_query,GravitEon Lookup,absl::flat_hash_map,11.6106033325,13.275718689,1.1434133359667078,win,True
+39_lookup-stress_tiny_keys_5000000_s731,utf16,tiny_keys,5000000,mixed,ns_per_query,GravitEon Lookup,tsl::robin_map,32.0053100586,31.636428833,0.9884743742546284,near,True
+39_lookup-stress_tiny_keys_5000000_s731,bytes,tiny_keys,5000000,,build_ms,GravitEon Lookup,boost::unordered_flat_map,246.3297,330.0147,1.3397276089728523,win,True
+39_lookup-stress_tiny_keys_5000000_s731,utf16,tiny_keys,5000000,,build_ms,GravitEon Lookup,ankerl::unordered_dense,264.4684,369.9067,1.39868014477344,win,True
+40_parallel_tiny_keys_5000000_s731,bytes,tiny_keys,5000000,,ms,GravitEon Sort,std::sort,221.5587,1607.9966,7.257654969089456,win,True
+40_parallel_tiny_keys_5000000_s731,bytes,tiny_keys,5000000,,ms,GravitEon Parallel Sort,Microsoft PPL Sort,83.75,385.8517,4.60718447761194,win,True
+40_parallel_tiny_keys_5000000_s731,utf16,tiny_keys,5000000,,ms,GravitEon Parallel Sort,Microsoft PPL Buffered Sort,93.0228,306.5756,3.2957038489488597,win,True
+40_parallel_tiny_keys_5000000_s731,utf16,tiny_keys,5000000,,ms,GravitEon Sort,std::sort,253.446,1026.1235,4.0486868997735215,win,True
+41_lookup-stress_hard_prefix_5000000_s731,bytes,hard_prefix,5000000,hit,ns_per_query,GravitEon Lookup,boost::unordered_flat_map,48.3038902283,73.4508514404,1.5205990882566027,win,True
+41_lookup-stress_hard_prefix_5000000_s731,bytes,hard_prefix,5000000,hot_hits,ns_per_query,GravitEon Lookup,ankerl::unordered_dense,11.0787391663,18.8187599182,1.6986373300893371,win,True
+41_lookup-stress_hard_prefix_5000000_s731,bytes,hard_prefix,5000000,append_miss,ns_per_query,GravitEon Lookup,ankerl::unordered_dense,14.3715858459,23.4605789185,1.6324279846397713,win,True
+41_lookup-stress_hard_prefix_5000000_s731,bytes,hard_prefix,5000000,early_miss,ns_per_query,GravitEon Lookup,ankerl::unordered_dense,2.57472991943,23.3350753784,9.063115786360216,win,True
+41_lookup-stress_hard_prefix_5000000_s731,bytes,hard_prefix,5000000,same_alphabet_miss,ns_per_query,GravitEon Lookup,ankerl::unordered_dense,14.5642280579,23.139667511,1.5888015086696248,win,True
+41_lookup-stress_hard_prefix_5000000_s731,bytes,hard_prefix,5000000,interior_miss,ns_per_query,GravitEon Lookup,ankerl::unordered_dense,14.5881652832,23.3497619629,1.600596203128437,win,True
+41_lookup-stress_hard_prefix_5000000_s731,bytes,hard_prefix,5000000,mixed,ns_per_query,GravitEon Lookup,boost::unordered_flat_map,34.3495368958,51.5717506409,1.5013812499814458,win,True
+41_lookup-stress_hard_prefix_5000000_s731,utf16,hard_prefix,5000000,hit,ns_per_query,GravitEon Lookup,absl::flat_hash_map,58.8282585144,147.231483459,2.5027340121407917,win,True
+41_lookup-stress_hard_prefix_5000000_s731,utf16,hard_prefix,5000000,hot_hits,ns_per_query,GravitEon Lookup,ankerl::unordered_dense,16.1833763123,56.1986923218,3.4726185214569103,win,True
+41_lookup-stress_hard_prefix_5000000_s731,utf16,hard_prefix,5000000,append_miss,ns_per_query,GravitEon Lookup,ankerl::unordered_dense,16.8355941772,30.1867485046,1.793031370730064,win,True
+41_lookup-stress_hard_prefix_5000000_s731,utf16,hard_prefix,5000000,early_miss,ns_per_query,GravitEon Lookup,ankerl::unordered_dense,3.09686660767,29.7927856445,9.620299941467385,win,True
+41_lookup-stress_hard_prefix_5000000_s731,utf16,hard_prefix,5000000,same_alphabet_miss,ns_per_query,GravitEon Lookup,ankerl::unordered_dense,17.1359062195,29.2578697205,1.7074013679653355,win,True
+41_lookup-stress_hard_prefix_5000000_s731,utf16,hard_prefix,5000000,interior_miss,ns_per_query,GravitEon Lookup,ankerl::unordered_dense,16.916847229,29.6343803406,1.7517673322602778,win,True
+41_lookup-stress_hard_prefix_5000000_s731,utf16,hard_prefix,5000000,mixed,ns_per_query,GravitEon Lookup,ankerl::unordered_dense,47.4948883057,83.5603713989,1.759355045980215,win,True
+41_lookup-stress_hard_prefix_5000000_s731,bytes,hard_prefix,5000000,,build_ms,GravitEon Lookup,ankerl::unordered_dense,184.1335,506.1306,2.748715470025824,win,True
+41_lookup-stress_hard_prefix_5000000_s731,utf16,hard_prefix,5000000,,build_ms,GravitEon Lookup,ankerl::unordered_dense,217.9029,587.7424,2.6972674526130676,win,True
+42_parallel_hard_prefix_5000000_s731,bytes,hard_prefix,5000000,,ms,GravitEon Sort,std::sort,1053.4345,3380.0864,3.20863461373251,win,True
+42_parallel_hard_prefix_5000000_s731,bytes,hard_prefix,5000000,,ms,GravitEon Parallel Sort,Microsoft PPL Buffered Sort,429.4875,852.6448,1.9852610378648972,win,True
+42_parallel_hard_prefix_5000000_s731,utf16,hard_prefix,5000000,,ms,GravitEon Parallel Sort,Microsoft PPL Buffered Sort,515.7398,2301.5559,4.462629992876253,win,True
+42_parallel_hard_prefix_5000000_s731,utf16,hard_prefix,5000000,,ms,GravitEon Sort,std::sort,1241.2403,10294.7884,8.293952750325621,win,True
+43_lookup-stress_mixed_5000000_s731,bytes,mixed,5000000,hit,ns_per_query,GravitEon Lookup,ankerl::unordered_dense,23.8561630249,33.4659576416,1.4028223066161027,win,True
+43_lookup-stress_mixed_5000000_s731,bytes,mixed,5000000,hot_hits,ns_per_query,GravitEon Lookup,ankerl::unordered_dense,8.82654190063,12.2738838196,1.3905654057705141,win,True
+43_lookup-stress_mixed_5000000_s731,bytes,mixed,5000000,append_miss,ns_per_query,GravitEon Lookup,boost::unordered_flat_map,2.25410461426,16.2083625793,7.190599086112534,win,True
+43_lookup-stress_mixed_5000000_s731,bytes,mixed,5000000,early_miss,ns_per_query,GravitEon Lookup,boost::unordered_flat_map,1.86414718628,16.1562919617,8.666854248746686,win,True
+43_lookup-stress_mixed_5000000_s731,bytes,mixed,5000000,same_alphabet_miss,ns_per_query,GravitEon Lookup,boost::unordered_flat_map,7.05003738403,16.3178443909,2.3145755833669437,win,True
+43_lookup-stress_mixed_5000000_s731,bytes,mixed,5000000,interior_miss,ns_per_query,GravitEon Lookup,boost::unordered_flat_map,7.45735168457,16.3628578186,2.1941915187473824,win,True
+43_lookup-stress_mixed_5000000_s731,bytes,mixed,5000000,mixed,ns_per_query,GravitEon Lookup,boost::unordered_flat_map,16.8385505676,27.0713806152,1.6077025458051932,win,True
+43_lookup-stress_mixed_5000000_s731,utf16,mixed,5000000,hit,ns_per_query,GravitEon Lookup,ankerl::unordered_dense,24.3897438049,53.1422615051,2.1788773974092956,win,True
+43_lookup-stress_mixed_5000000_s731,utf16,mixed,5000000,hot_hits,ns_per_query,GravitEon Lookup,ankerl::unordered_dense,9.43555831909,29.7591209412,3.153933231591756,win,True
+43_lookup-stress_mixed_5000000_s731,utf16,mixed,5000000,append_miss,ns_per_query,GravitEon Lookup,ankerl::unordered_dense,2.42328643799,19.2878723145,7.959386068490676,win,True
+43_lookup-stress_mixed_5000000_s731,utf16,mixed,5000000,early_miss,ns_per_query,GravitEon Lookup,ankerl::unordered_dense,1.86977386475,19.2434310913,10.291849433820683,win,True
+43_lookup-stress_mixed_5000000_s731,utf16,mixed,5000000,same_alphabet_miss,ns_per_query,GravitEon Lookup,ankerl::unordered_dense,9.44814682007,19.8139190674,2.097122265851199,win,True
+43_lookup-stress_mixed_5000000_s731,utf16,mixed,5000000,interior_miss,ns_per_query,GravitEon Lookup,ankerl::unordered_dense,10.4131698608,20.0901985168,1.9293067130719554,win,True
+43_lookup-stress_mixed_5000000_s731,utf16,mixed,5000000,mixed,ns_per_query,GravitEon Lookup,ankerl::unordered_dense,18.1318283081,38.2719993591,2.110763388488673,win,True
+43_lookup-stress_mixed_5000000_s731,bytes,mixed,5000000,,build_ms,GravitEon Lookup,ankerl::unordered_dense,311.7126,364.4204,1.1690910152493033,win,True
+43_lookup-stress_mixed_5000000_s731,utf16,mixed,5000000,,build_ms,GravitEon Lookup,ankerl::unordered_dense,353.3976,524.4869,1.4841269437030697,win,True
+44_parallel_mixed_5000000_s731,bytes,mixed,5000000,,ms,GravitEon Sort,std::sort,520.0252,1628.0742,3.130760201620998,win,True
+44_parallel_mixed_5000000_s731,bytes,mixed,5000000,,ms,GravitEon Parallel Sort,Microsoft PPL Buffered Sort,268.636,422.4674,1.5726388123706427,win,True
+44_parallel_mixed_5000000_s731,utf16,mixed,5000000,,ms,GravitEon Parallel Sort,Microsoft PPL Buffered Sort,253.3856,743.0995,2.932682441306846,win,True
+44_parallel_mixed_5000000_s731,utf16,mixed,5000000,,ms,GravitEon Sort,std::sort,528.1749,2668.7219,5.052723823112382,win,True
+45_lookup-stress_duplicates95_5000000_s731,bytes,duplicates95,5000000,hit,ns_per_query,GravitEon Lookup,ankerl::unordered_dense,10.9203338623,13.6057853699,1.2459129493165881,win,True
+45_lookup-stress_duplicates95_5000000_s731,bytes,duplicates95,5000000,hot_hits,ns_per_query,GravitEon Lookup,ankerl::unordered_dense,8.6350440979,11.6344451904,1.347352145338718,win,True
+45_lookup-stress_duplicates95_5000000_s731,bytes,duplicates95,5000000,append_miss,ns_per_query,GravitEon Lookup,absl::flat_hash_map,1.43022537231,8.69407653809,6.078815763174398,win,True
+45_lookup-stress_duplicates95_5000000_s731,bytes,duplicates95,5000000,early_miss,ns_per_query,GravitEon Lookup,absl::flat_hash_map,1.43909454346,8.68072509766,6.032074221328797,win,True
+45_lookup-stress_duplicates95_5000000_s731,bytes,duplicates95,5000000,same_alphabet_miss,ns_per_query,GravitEon Lookup,boost::unordered_flat_map,5.30738830566,8.73222351074,1.6452957665501178,win,True
+45_lookup-stress_duplicates95_5000000_s731,bytes,duplicates95,5000000,interior_miss,ns_per_query,GravitEon Lookup,boost::unordered_flat_map,8.45060348511,10.9275817871,1.293112593243127,win,True
+45_lookup-stress_duplicates95_5000000_s731,bytes,duplicates95,5000000,mixed,ns_per_query,GravitEon Lookup,boost::unordered_flat_map,10.1241111755,14.3384933472,1.4162718186954188,win,True
+45_lookup-stress_duplicates95_5000000_s731,utf16,duplicates95,5000000,hit,ns_per_query,GravitEon Lookup,ankerl::unordered_dense,11.8125915527,25.0577926636,2.1212781760724257,win,True
+45_lookup-stress_duplicates95_5000000_s731,utf16,duplicates95,5000000,hot_hits,ns_per_query,GravitEon Lookup,ankerl::unordered_dense,9.95979309082,22.993183136,2.3086004825936546,win,True
+45_lookup-stress_duplicates95_5000000_s731,utf16,duplicates95,5000000,append_miss,ns_per_query,GravitEon Lookup,ankerl::unordered_dense,1.4214515686,9.7785949707,6.879302247582746,win,True
+45_lookup-stress_duplicates95_5000000_s731,utf16,duplicates95,5000000,early_miss,ns_per_query,GravitEon Lookup,ankerl::unordered_dense,1.41839981079,9.889793396,6.972500504277228,win,True
+45_lookup-stress_duplicates95_5000000_s731,utf16,duplicates95,5000000,same_alphabet_miss,ns_per_query,GravitEon Lookup,ankerl::unordered_dense,6.70022964478,9.6489906311,1.4400984955220624,win,True
+45_lookup-stress_duplicates95_5000000_s731,utf16,duplicates95,5000000,interior_miss,ns_per_query,GravitEon Lookup,ankerl::unordered_dense,9.47456359863,15.2126312256,1.6056286991202118,win,True
+45_lookup-stress_duplicates95_5000000_s731,utf16,duplicates95,5000000,mixed,ns_per_query,GravitEon Lookup,ankerl::unordered_dense,11.168384552,19.531917572,1.7488579016114096,win,True
+45_lookup-stress_duplicates95_5000000_s731,bytes,duplicates95,5000000,,build_ms,GravitEon Lookup,ankerl::unordered_dense,103.9525,137.2909,1.3207080156802384,win,True
+45_lookup-stress_duplicates95_5000000_s731,utf16,duplicates95,5000000,,build_ms,GravitEon Lookup,ankerl::unordered_dense,106.0724,194.9101,1.8375194678351767,win,True
+46_parallel_duplicates95_5000000_s731,bytes,duplicates95,5000000,,ms,GravitEon Sort,std::sort,260.7432,585.332,2.2448600768879112,win,True
+46_parallel_duplicates95_5000000_s731,bytes,duplicates95,5000000,,ms,GravitEon Parallel Sort,Microsoft PPL Buffered Sort,130.3914,302.8671,2.322753647863279,win,True
+46_parallel_duplicates95_5000000_s731,utf16,duplicates95,5000000,,ms,GravitEon Parallel Sort,Microsoft PPL Buffered Sort,157.6259,396.6134,2.5161689798440485,win,True
+46_parallel_duplicates95_5000000_s731,utf16,duplicates95,5000000,,ms,GravitEon Sort,std::sort,295.6463,818.0815,2.767095343320718,win,True
+47_lookup-stress_binary_5000000_s731,bytes,binary,5000000,hit,ns_per_query,GravitEon Lookup,boost::unordered_flat_map,47.3262786865,50.7853507996,1.0730898817549903,win,True
+47_lookup-stress_binary_5000000_s731,bytes,binary,5000000,hot_hits,ns_per_query,GravitEon Lookup,ankerl::unordered_dense,10.0926399231,14.314365387,1.4182974421030645,win,True
+47_lookup-stress_binary_5000000_s731,bytes,binary,5000000,append_miss,ns_per_query,GravitEon Lookup,boost::unordered_flat_map,15.8337593079,19.5357322693,1.233802528471742,win,True
+47_lookup-stress_binary_5000000_s731,bytes,binary,5000000,early_miss,ns_per_query,GravitEon Lookup,boost::unordered_flat_map,15.6978607178,19.2235946655,1.2245996452052939,win,True
+47_lookup-stress_binary_5000000_s731,bytes,binary,5000000,same_alphabet_miss,ns_per_query,GravitEon Lookup,boost::unordered_flat_map,15.6620979309,19.2816734314,1.2311041289914861,win,True
+47_lookup-stress_binary_5000000_s731,bytes,binary,5000000,interior_miss,ns_per_query,GravitEon Lookup,boost::unordered_flat_map,15.7504081726,19.2765235901,1.2238745420981636,win,True
+47_lookup-stress_binary_5000000_s731,bytes,binary,5000000,mixed,ns_per_query,GravitEon Lookup,boost::unordered_flat_map,41.6767120361,38.8502120972,0.9321803520284491,loss,True
+47_lookup-stress_binary_5000000_s731,utf16,binary,5000000,hit,ns_per_query,GravitEon Lookup,ankerl::unordered_dense,48.7948417664,97.9378700256,2.007135723371477,win,True
+47_lookup-stress_binary_5000000_s731,utf16,binary,5000000,hot_hits,ns_per_query,GravitEon Lookup,ankerl::unordered_dense,11.4987373352,28.9174079895,2.5148333374811394,win,True
+47_lookup-stress_binary_5000000_s731,utf16,binary,5000000,append_miss,ns_per_query,GravitEon Lookup,ankerl::unordered_dense,17.7718162537,23.4077453613,1.3171273564358754,win,True
+47_lookup-stress_binary_5000000_s731,utf16,binary,5000000,early_miss,ns_per_query,GravitEon Lookup,ankerl::unordered_dense,17.2701835632,23.1462478638,1.3402433030949916,win,True
+47_lookup-stress_binary_5000000_s731,utf16,binary,5000000,same_alphabet_miss,ns_per_query,GravitEon Lookup,ankerl::unordered_dense,17.2285079956,23.3675956726,1.3563331008447084,win,True
+47_lookup-stress_binary_5000000_s731,utf16,binary,5000000,interior_miss,ns_per_query,GravitEon Lookup,ankerl::unordered_dense,16.8907165527,22.9857444763,1.3608507611020033,win,True
+47_lookup-stress_binary_5000000_s731,utf16,binary,5000000,mixed,ns_per_query,GravitEon Lookup,ankerl::unordered_dense,41.8063163757,60.4990005493,1.4471258363357065,win,True
+47_lookup-stress_binary_5000000_s731,bytes,binary,5000000,,build_ms,GravitEon Lookup,ankerl::unordered_dense,308.4961,411.7554,1.3347183319335316,win,True
+47_lookup-stress_binary_5000000_s731,utf16,binary,5000000,,build_ms,GravitEon Lookup,ankerl::unordered_dense,346.3276,474.4813,1.3700360583447577,win,True
+48_parallel_binary_5000000_s731,bytes,binary,5000000,,ms,GravitEon Sort,std::sort,339.2636,2558.617,7.541678506034836,win,True
+48_parallel_binary_5000000_s731,bytes,binary,5000000,,ms,GravitEon Parallel Sort,Microsoft PPL Buffered Sort,143.6309,607.2129,4.227592391330835,win,True
+48_parallel_binary_5000000_s731,utf16,binary,5000000,,ms,GravitEon Parallel Sort,Microsoft PPL Buffered Sort,174.6495,369.1704,2.1137787397043795,win,True
+48_parallel_binary_5000000_s731,utf16,binary,5000000,,ms,GravitEon Sort,std::sort,362.2073,1324.1015,3.6556455377901,win,True
+49_lookup-stress_bank_ids_5000000_s731,bytes,bank_ids,5000000,hit,ns_per_query,GravitEon Lookup,boost::unordered_flat_map,45.3386306763,45.7016944885,1.0080078248236506,near,True
+49_lookup-stress_bank_ids_5000000_s731,bytes,bank_ids,5000000,hot_hits,ns_per_query,GravitEon Lookup,ankerl::unordered_dense,9.06753540039,12.3125076294,1.3578670593191655,win,True
+49_lookup-stress_bank_ids_5000000_s731,bytes,bank_ids,5000000,append_miss,ns_per_query,GravitEon Lookup,boost::unordered_flat_map,12.5442504883,15.6964302063,1.251284819363264,win,True
+49_lookup-stress_bank_ids_5000000_s731,bytes,bank_ids,5000000,early_miss,ns_per_query,GravitEon Lookup,boost::unordered_flat_map,2.53295898438,15.7994270325,6.237537650601664,win,True
+49_lookup-stress_bank_ids_5000000_s731,bytes,bank_ids,5000000,same_alphabet_miss,ns_per_query,GravitEon Lookup,boost::unordered_flat_map,13.7907981873,14.3313407898,1.0391958895459574,win,True
+49_lookup-stress_bank_ids_5000000_s731,bytes,bank_ids,5000000,interior_miss,ns_per_query,GravitEon Lookup,boost::unordered_flat_map,13.5370254517,14.3007278442,1.0564158200946645,win,True
+49_lookup-stress_bank_ids_5000000_s731,bytes,bank_ids,5000000,mixed,ns_per_query,GravitEon Lookup,boost::unordered_flat_map,40.3600692749,35.9316825867,0.8902780206337747,loss,True
+49_lookup-stress_bank_ids_5000000_s731,utf16,bank_ids,5000000,hit,ns_per_query,GravitEon Lookup,ankerl::unordered_dense,47.7320671082,94.8952674866,1.988082084764725,win,True
+49_lookup-stress_bank_ids_5000000_s731,utf16,bank_ids,5000000,hot_hits,ns_per_query,GravitEon Lookup,ankerl::unordered_dense,10.9248161316,24.62682724,2.254209768232801,win,True
+49_lookup-stress_bank_ids_5000000_s731,utf16,bank_ids,5000000,append_miss,ns_per_query,GravitEon Lookup,ankerl::unordered_dense,14.3544197083,20.1415061951,1.4031571184625315,win,True
+49_lookup-stress_bank_ids_5000000_s731,utf16,bank_ids,5000000,early_miss,ns_per_query,GravitEon Lookup,ankerl::unordered_dense,3.03173065186,20.1059341431,6.6318339100357715,win,True
+49_lookup-stress_bank_ids_5000000_s731,utf16,bank_ids,5000000,same_alphabet_miss,ns_per_query,GravitEon Lookup,ankerl::unordered_dense,15.6650543213,19.4685935974,1.242804091073484,win,True
+49_lookup-stress_bank_ids_5000000_s731,utf16,bank_ids,5000000,interior_miss,ns_per_query,GravitEon Lookup,ankerl::unordered_dense,15.3049468994,19.6372032166,1.283062485984178,win,True
+49_lookup-stress_bank_ids_5000000_s731,utf16,bank_ids,5000000,mixed,ns_per_query,GravitEon Lookup,ankerl::unordered_dense,43.3742523193,54.4321060181,1.2549405028909202,win,True
+49_lookup-stress_bank_ids_5000000_s731,bytes,bank_ids,5000000,,build_ms,GravitEon Lookup,ankerl::unordered_dense,280.554,383.7147,1.3677035437028167,win,True
+49_lookup-stress_bank_ids_5000000_s731,utf16,bank_ids,5000000,,build_ms,GravitEon Lookup,ankerl::unordered_dense,345.2112,408.8555,1.1843633694387667,win,True
+50_parallel_bank_ids_5000000_s731,bytes,bank_ids,5000000,,ms,GravitEon Sort,std::sort,914.0573,2546.6188,2.786060348733061,win,True
+50_parallel_bank_ids_5000000_s731,bytes,bank_ids,5000000,,ms,GravitEon Parallel Sort,Microsoft PPL Buffered Sort,314.9093,565.7918,1.7966817747205306,win,True
+50_parallel_bank_ids_5000000_s731,utf16,bank_ids,5000000,,ms,GravitEon Parallel Sort,Microsoft PPL Buffered Sort,364.6626,787.7974,2.1603460294529793,win,True
+50_parallel_bank_ids_5000000_s731,utf16,bank_ids,5000000,,ms,GravitEon Sort,std::sort,1050.2368,3373.2314,3.211876978601398,win,True
+51_lookup-stress_zipf_hot_5000000_s731,bytes,zipf_hot,5000000,hit,ns_per_query,GravitEon Lookup,ankerl::unordered_dense,15.0769233704,16.6897773743,1.106975008380454,win,True
+51_lookup-stress_zipf_hot_5000000_s731,bytes,zipf_hot,5000000,hot_hits,ns_per_query,GravitEon Lookup,ankerl::unordered_dense,8.91695022583,11.2886428833,1.265975764965004,win,True
+51_lookup-stress_zipf_hot_5000000_s731,bytes,zipf_hot,5000000,append_miss,ns_per_query,GravitEon Lookup,boost::unordered_flat_map,1.43890380859,10.5063438416,7.301630434834485,win,True
+51_lookup-stress_zipf_hot_5000000_s731,bytes,zipf_hot,5000000,early_miss,ns_per_query,GravitEon Lookup,boost::unordered_flat_map,1.43947601318,10.4827880859,7.282363853178826,win,True
+51_lookup-stress_zipf_hot_5000000_s731,bytes,zipf_hot,5000000,same_alphabet_miss,ns_per_query,GravitEon Lookup,boost::unordered_flat_map,8.22219848633,10.5179786682,1.2792173146497132,win,True
+51_lookup-stress_zipf_hot_5000000_s731,bytes,zipf_hot,5000000,interior_miss,ns_per_query,GravitEon Lookup,boost::unordered_flat_map,8.66823196411,11.5040779114,1.327153906244267,win,True
+51_lookup-stress_zipf_hot_5000000_s731,bytes,zipf_hot,5000000,mixed,ns_per_query,GravitEon Lookup,boost::unordered_flat_map,11.8523597717,15.309715271,1.291701869154796,win,True
+51_lookup-stress_zipf_hot_5000000_s731,utf16,zipf_hot,5000000,hit,ns_per_query,GravitEon Lookup,ankerl::unordered_dense,17.232131958,22.0023155212,1.2768191176127484,win,True
+51_lookup-stress_zipf_hot_5000000_s731,utf16,zipf_hot,5000000,hot_hits,ns_per_query,GravitEon Lookup,ankerl::unordered_dense,8.13140869141,12.5282287598,1.5407205854792159,win,True
+51_lookup-stress_zipf_hot_5000000_s731,utf16,zipf_hot,5000000,append_miss,ns_per_query,GravitEon Lookup,ankerl::unordered_dense,1.42211914062,12.0901107788,8.50147532191226,win,True
+51_lookup-stress_zipf_hot_5000000_s731,utf16,zipf_hot,5000000,early_miss,ns_per_query,GravitEon Lookup,ankerl::unordered_dense,1.42183303833,11.9341850281,8.393520692216562,win,True
+51_lookup-stress_zipf_hot_5000000_s731,utf16,zipf_hot,5000000,same_alphabet_miss,ns_per_query,GravitEon Lookup,ankerl::unordered_dense,8.06255340576,12.1528625488,1.5073218045436856,win,True
+51_lookup-stress_zipf_hot_5000000_s731,utf16,zipf_hot,5000000,interior_miss,ns_per_query,GravitEon Lookup,ankerl::unordered_dense,8.93306732178,15.6571388245,1.7527169851643036,win,True
+51_lookup-stress_zipf_hot_5000000_s731,utf16,zipf_hot,5000000,mixed,ns_per_query,GravitEon Lookup,ankerl::unordered_dense,13.4035110474,19.2748069763,1.4380416376079987,win,True
+51_lookup-stress_zipf_hot_5000000_s731,bytes,zipf_hot,5000000,,build_ms,GravitEon Lookup,ankerl::unordered_dense,120.6005,129.7417,1.0757973640241958,win,True
+51_lookup-stress_zipf_hot_5000000_s731,utf16,zipf_hot,5000000,,build_ms,GravitEon Lookup,ankerl::unordered_dense,120.5829,159.9726,1.3266607454290784,win,True
+52_parallel_zipf_hot_5000000_s731,bytes,zipf_hot,5000000,,ms,GravitEon Sort,std::sort,358.0085,746.6796,2.08564768713592,win,True
+52_parallel_zipf_hot_5000000_s731,bytes,zipf_hot,5000000,,ms,GravitEon Parallel Sort,Microsoft PPL Buffered Sort,232.195,302.11,1.3011046749499344,win,True
+52_parallel_zipf_hot_5000000_s731,utf16,zipf_hot,5000000,,ms,GravitEon Parallel Sort,Microsoft PPL Buffered Sort,253.8015,399.028,1.5722050500095548,win,True
+52_parallel_zipf_hot_5000000_s731,utf16,zipf_hot,5000000,,ms,GravitEon Sort,std::sort,400.7585,1036.6443,2.5867057092987418,win,True
+53_lookup-stress_random_short_10000000_s731,bytes,random_short,10000000,hit,ns_per_query,GravitEon Lookup,boost::unordered_flat_map,41.9093132019,40.7863616943,0.9732052037648499,near,True
+53_lookup-stress_random_short_10000000_s731,bytes,random_short,10000000,hot_hits,ns_per_query,GravitEon Lookup,ankerl::unordered_dense,6.70747756958,10.2151870728,1.5229550851020797,win,True
+53_lookup-stress_random_short_10000000_s731,bytes,random_short,10000000,append_miss,ns_per_query,GravitEon Lookup,absl::flat_hash_map,12.3940467834,14.2006874084,1.1457668069657223,win,True
+53_lookup-stress_random_short_10000000_s731,bytes,random_short,10000000,early_miss,ns_per_query,GravitEon Lookup,absl::flat_hash_map,2.0001411438,13.8339042664,6.91646402519246,win,True
+53_lookup-stress_random_short_10000000_s731,bytes,random_short,10000000,same_alphabet_miss,ns_per_query,GravitEon Lookup,absl::flat_hash_map,12.6715660095,14.0666007996,1.1100917431242618,win,True
+53_lookup-stress_random_short_10000000_s731,bytes,random_short,10000000,interior_miss,ns_per_query,GravitEon Lookup,absl::flat_hash_map,12.5512123108,13.9093399048,1.1082068855477303,win,True
+53_lookup-stress_random_short_10000000_s731,bytes,random_short,10000000,mixed,ns_per_query,GravitEon Lookup,boost::unordered_flat_map,28.7185668945,31.1049461365,1.083095345626631,win,True
+53_lookup-stress_random_short_10000000_s731,utf16,random_short,10000000,hit,ns_per_query,GravitEon Lookup,ankerl::unordered_dense,43.5946464539,56.8858146667,1.3048807432549088,win,True
+53_lookup-stress_random_short_10000000_s731,utf16,random_short,10000000,hot_hits,ns_per_query,GravitEon Lookup,ankerl::unordered_dense,8.5638999939,14.1068458557,1.6472455149812817,win,True
+53_lookup-stress_random_short_10000000_s731,utf16,random_short,10000000,append_miss,ns_per_query,GravitEon Lookup,absl::flat_hash_map,13.6119842529,14.7521018982,1.0837583723370163,win,True
+53_lookup-stress_random_short_10000000_s731,utf16,random_short,10000000,early_miss,ns_per_query,GravitEon Lookup,absl::flat_hash_map,2.54535675049,14.6263122559,5.74627201200159,win,True
+53_lookup-stress_random_short_10000000_s731,utf16,random_short,10000000,same_alphabet_miss,ns_per_query,GravitEon Lookup,absl::flat_hash_map,14.3179893494,14.248752594,0.9951643520811182,near,True
+53_lookup-stress_random_short_10000000_s731,utf16,random_short,10000000,interior_miss,ns_per_query,GravitEon Lookup,absl::flat_hash_map,14.3431663513,14.1166687012,0.9842086716034307,near,True
+53_lookup-stress_random_short_10000000_s731,utf16,random_short,10000000,mixed,ns_per_query,GravitEon Lookup,absl::flat_hash_map,38.3508682251,43.9688682556,1.1464895135496076,win,True
+53_lookup-stress_random_short_10000000_s731,bytes,random_short,10000000,,build_ms,GravitEon Lookup,ankerl::unordered_dense,558.3671,772.4762,1.3834557945838855,win,True
+53_lookup-stress_random_short_10000000_s731,utf16,random_short,10000000,,build_ms,GravitEon Lookup,ankerl::unordered_dense,611.0448,849.2287,1.389797769328861,win,True
+54_parallel_random_short_10000000_s731,bytes,random_short,10000000,,ms,GravitEon Parallel Sort,Microsoft PPL Buffered Sort,301.8296,1106.4019,3.6656507512848306,win,True
+54_parallel_random_short_10000000_s731,bytes,random_short,10000000,,ms,GravitEon Sort,std::sort,857.7478,4725.0045,5.508617451423367,win,True
+54_parallel_random_short_10000000_s731,utf16,random_short,10000000,,ms,GravitEon Sort,std::sort,984.0761,3300.7911,3.354203094659041,win,True
+54_parallel_random_short_10000000_s731,utf16,random_short,10000000,,ms,GravitEon Parallel Sort,Microsoft PPL Buffered Sort,329.5609,915.6592,2.7784218334153112,win,True
+55_lookup-stress_tiny_keys_10000000_s731,bytes,tiny_keys,10000000,hit,ns_per_query,GravitEon Lookup,tsl::robin_map,37.9168510437,33.4675788879,0.8826571291304723,loss,True
+55_lookup-stress_tiny_keys_10000000_s731,bytes,tiny_keys,10000000,hot_hits,ns_per_query,GravitEon Lookup,tsl::robin_map,6.96506500244,9.02900695801,1.2963277377665476,win,True
+55_lookup-stress_tiny_keys_10000000_s731,bytes,tiny_keys,10000000,append_miss,ns_per_query,GravitEon Lookup,boost::unordered_flat_map,11.4800453186,12.4953269958,1.0884388213655427,win,True
+55_lookup-stress_tiny_keys_10000000_s731,bytes,tiny_keys,10000000,early_miss,ns_per_query,GravitEon Lookup,boost::unordered_flat_map,11.3738059998,12.330532074,1.0841166162159637,win,True
+55_lookup-stress_tiny_keys_10000000_s731,bytes,tiny_keys,10000000,same_alphabet_miss,ns_per_query,GravitEon Lookup,boost::unordered_flat_map,12.7850532532,12.0676040649,0.943883754405135,loss,True
+55_lookup-stress_tiny_keys_10000000_s731,bytes,tiny_keys,10000000,interior_miss,ns_per_query,GravitEon Lookup,boost::unordered_flat_map,12.8052711487,12.085723877,0.9438085095314012,loss,True
+55_lookup-stress_tiny_keys_10000000_s731,bytes,tiny_keys,10000000,mixed,ns_per_query,GravitEon Lookup,boost::unordered_flat_map,28.448677063,27.4457931519,0.9647476081619155,loss,True
+55_lookup-stress_tiny_keys_10000000_s731,utf16,tiny_keys,10000000,hit,ns_per_query,GravitEon Lookup,tsl::robin_map,40.472984314,42.89894104,1.0599401493890044,win,True
+55_lookup-stress_tiny_keys_10000000_s731,utf16,tiny_keys,10000000,hot_hits,ns_per_query,GravitEon Lookup,ankerl::unordered_dense,7.4197769165,9.97982025146,1.3450296907535062,win,True
+55_lookup-stress_tiny_keys_10000000_s731,utf16,tiny_keys,10000000,append_miss,ns_per_query,GravitEon Lookup,absl::flat_hash_map,11.940574646,14.3014907837,1.1977221538907166,win,True
+55_lookup-stress_tiny_keys_10000000_s731,utf16,tiny_keys,10000000,early_miss,ns_per_query,GravitEon Lookup,absl::flat_hash_map,11.720085144,14.0655517578,1.2001236838284184,win,True
+55_lookup-stress_tiny_keys_10000000_s731,utf16,tiny_keys,10000000,same_alphabet_miss,ns_per_query,GravitEon Lookup,absl::flat_hash_map,12.6439094543,13.4141921997,1.0609212481459238,win,True
+55_lookup-stress_tiny_keys_10000000_s731,utf16,tiny_keys,10000000,interior_miss,ns_per_query,GravitEon Lookup,absl::flat_hash_map,12.7250671387,13.7868881226,1.0834432519943842,win,True
+55_lookup-stress_tiny_keys_10000000_s731,utf16,tiny_keys,10000000,mixed,ns_per_query,GravitEon Lookup,boost::unordered_flat_map,33.7815284729,35.3900909424,1.0476166278500516,win,True
+55_lookup-stress_tiny_keys_10000000_s731,bytes,tiny_keys,10000000,,build_ms,GravitEon Lookup,boost::unordered_flat_map,546.5871,752.3356,1.3764239953705457,win,True
+55_lookup-stress_tiny_keys_10000000_s731,utf16,tiny_keys,10000000,,build_ms,GravitEon Lookup,ankerl::unordered_dense,563.88,786.9664,1.3956274384620841,win,True
+56_parallel_tiny_keys_10000000_s731,bytes,tiny_keys,10000000,,ms,GravitEon Parallel Sort,Microsoft PPL Buffered Sort,170.8044,1049.7302,6.145803035518991,win,True
+56_parallel_tiny_keys_10000000_s731,bytes,tiny_keys,10000000,,ms,GravitEon Sort,std::sort,423.3653,4060.1882,9.590271569257093,win,True
+56_parallel_tiny_keys_10000000_s731,utf16,tiny_keys,10000000,,ms,GravitEon Sort,std::sort,462.7316,2302.3465,4.975554943729799,win,True
+56_parallel_tiny_keys_10000000_s731,utf16,tiny_keys,10000000,,ms,GravitEon Parallel Sort,Microsoft PPL Buffered Sort,193.2423,655.9732,3.3945631986371514,win,True
+57_lookup-stress_hard_prefix_10000000_s731,bytes,hard_prefix,10000000,hit,ns_per_query,GravitEon Lookup,boost::unordered_flat_map,54.3119430542,77.2783279419,1.4228606747650503,win,True
+57_lookup-stress_hard_prefix_10000000_s731,bytes,hard_prefix,10000000,hot_hits,ns_per_query,GravitEon Lookup,ankerl::unordered_dense,10.9803199768,18.2183265686,1.6591799334712443,win,True
+57_lookup-stress_hard_prefix_10000000_s731,bytes,hard_prefix,10000000,append_miss,ns_per_query,GravitEon Lookup,boost::unordered_flat_map,15.4138565063,23.4437942505,1.5209557868219403,win,True
+57_lookup-stress_hard_prefix_10000000_s731,bytes,hard_prefix,10000000,early_miss,ns_per_query,GravitEon Lookup,boost::unordered_flat_map,2.46276855469,23.4486579895,9.52125929366984,win,True
+57_lookup-stress_hard_prefix_10000000_s731,bytes,hard_prefix,10000000,same_alphabet_miss,ns_per_query,GravitEon Lookup,boost::unordered_flat_map,15.9334182739,25.6395339966,1.6091671953782363,win,True
+57_lookup-stress_hard_prefix_10000000_s731,bytes,hard_prefix,10000000,interior_miss,ns_per_query,GravitEon Lookup,boost::unordered_flat_map,16.0519599915,26.7833709717,1.6685420961603823,win,True
+57_lookup-stress_hard_prefix_10000000_s731,bytes,hard_prefix,10000000,mixed,ns_per_query,GravitEon Lookup,boost::unordered_flat_map,38.2668495178,53.1556129456,1.389077324509676,win,True
+57_lookup-stress_hard_prefix_10000000_s731,utf16,hard_prefix,10000000,hit,ns_per_query,GravitEon Lookup,absl::flat_hash_map,85.4829788208,281.477737427,3.292792802846383,win,True
+57_lookup-stress_hard_prefix_10000000_s731,utf16,hard_prefix,10000000,hot_hits,ns_per_query,GravitEon Lookup,ankerl::unordered_dense,15.9616470337,56.2190055847,3.5221306088277857,win,True
+57_lookup-stress_hard_prefix_10000000_s731,utf16,hard_prefix,10000000,append_miss,ns_per_query,GravitEon Lookup,ankerl::unordered_dense,18.0297851562,34.1229438782,1.8925873815232876,win,True
+57_lookup-stress_hard_prefix_10000000_s731,utf16,hard_prefix,10000000,early_miss,ns_per_query,GravitEon Lookup,ankerl::unordered_dense,3.04365158081,35.4681968689,11.653172489428284,win,True
+57_lookup-stress_hard_prefix_10000000_s731,utf16,hard_prefix,10000000,same_alphabet_miss,ns_per_query,GravitEon Lookup,ankerl::unordered_dense,19.3831443787,33.863067627,1.7470368566315735,win,True
+57_lookup-stress_hard_prefix_10000000_s731,utf16,hard_prefix,10000000,interior_miss,ns_per_query,GravitEon Lookup,ankerl::unordered_dense,18.7987327576,33.2365036011,1.7680183036626795,win,True
+57_lookup-stress_hard_prefix_10000000_s731,utf16,hard_prefix,10000000,mixed,ns_per_query,GravitEon Lookup,ankerl::unordered_dense,53.9887428284,109.651851654,2.031013242936993,win,True
+57_lookup-stress_hard_prefix_10000000_s731,bytes,hard_prefix,10000000,,build_ms,GravitEon Lookup,ankerl::unordered_dense,383.4526,1076.5432,2.8075000665010488,win,True
+57_lookup-stress_hard_prefix_10000000_s731,utf16,hard_prefix,10000000,,build_ms,GravitEon Lookup,ankerl::unordered_dense,452.813,1268.5742,2.801541033495063,win,True
+58_parallel_hard_prefix_10000000_s731,bytes,hard_prefix,10000000,,ms,GravitEon Parallel Sort,Microsoft PPL Buffered Sort,931.2329,1923.9583,2.0660334272983696,win,True
+58_parallel_hard_prefix_10000000_s731,bytes,hard_prefix,10000000,,ms,GravitEon Sort,std::sort,2378.1396,8174.468,3.4373373203154265,win,True
+58_parallel_hard_prefix_10000000_s731,utf16,hard_prefix,10000000,,ms,GravitEon Sort,std::sort,2804.7288,23997.3206,8.556021744419638,win,True
+58_parallel_hard_prefix_10000000_s731,utf16,hard_prefix,10000000,,ms,GravitEon Parallel Sort,Microsoft PPL Buffered Sort,1157.7727,5267.1001,4.549338656888351,win,True
+59_lookup-stress_mixed_10000000_s731,bytes,mixed,10000000,hit,ns_per_query,GravitEon Lookup,ankerl::unordered_dense,23.8807678223,33.7359428406,1.412682502155445,win,True
+59_lookup-stress_mixed_10000000_s731,bytes,mixed,10000000,hot_hits,ns_per_query,GravitEon Lookup,ankerl::unordered_dense,8.69264602661,12.2621536255,1.410635333356839,win,True
+59_lookup-stress_mixed_10000000_s731,bytes,mixed,10000000,append_miss,ns_per_query,GravitEon Lookup,boost::unordered_flat_map,2.25915908813,16.2784576416,7.205538435575316,win,True
+59_lookup-stress_mixed_10000000_s731,bytes,mixed,10000000,early_miss,ns_per_query,GravitEon Lookup,boost::unordered_flat_map,1.85956954956,16.2824630737,8.756038771205228,win,True
+59_lookup-stress_mixed_10000000_s731,bytes,mixed,10000000,same_alphabet_miss,ns_per_query,GravitEon Lookup,boost::unordered_flat_map,7.1681022644,16.5298461914,2.3060282319763497,win,True
+59_lookup-stress_mixed_10000000_s731,bytes,mixed,10000000,interior_miss,ns_per_query,GravitEon Lookup,boost::unordered_flat_map,7.49979019165,16.4949417114,2.1993870881567967,win,True
+59_lookup-stress_mixed_10000000_s731,bytes,mixed,10000000,mixed,ns_per_query,GravitEon Lookup,boost::unordered_flat_map,17.1322822571,27.9895782471,1.6337331960253276,win,True
+59_lookup-stress_mixed_10000000_s731,utf16,mixed,10000000,hit,ns_per_query,GravitEon Lookup,ankerl::unordered_dense,24.5158195496,55.0101280212,2.243862494986326,win,True
+59_lookup-stress_mixed_10000000_s731,utf16,mixed,10000000,hot_hits,ns_per_query,GravitEon Lookup,ankerl::unordered_dense,9.48467254639,30.0252914429,3.165664528326605,win,True
+59_lookup-stress_mixed_10000000_s731,utf16,mixed,10000000,append_miss,ns_per_query,GravitEon Lookup,ankerl::unordered_dense,2.46076583862,21.1505889893,8.595124597942759,win,True
+59_lookup-stress_mixed_10000000_s731,utf16,mixed,10000000,early_miss,ns_per_query,GravitEon Lookup,ankerl::unordered_dense,1.88789367676,20.9215164185,11.081935744604788,win,True
+59_lookup-stress_mixed_10000000_s731,utf16,mixed,10000000,same_alphabet_miss,ns_per_query,GravitEon Lookup,ankerl::unordered_dense,9.49783325195,21.6333389282,2.277713069321201,win,True
+59_lookup-stress_mixed_10000000_s731,utf16,mixed,10000000,interior_miss,ns_per_query,GravitEon Lookup,ankerl::unordered_dense,10.5407714844,22.1327781677,2.0997303850534843,win,True
+59_lookup-stress_mixed_10000000_s731,utf16,mixed,10000000,mixed,ns_per_query,GravitEon Lookup,ankerl::unordered_dense,18.3429718018,40.0622367859,2.1840646771298355,win,True
+59_lookup-stress_mixed_10000000_s731,bytes,mixed,10000000,,build_ms,GravitEon Lookup,ankerl::unordered_dense,676.1937,754.5835,1.1159280247656846,win,True
+59_lookup-stress_mixed_10000000_s731,utf16,mixed,10000000,,build_ms,GravitEon Lookup,ankerl::unordered_dense,720.9704,1094.0036,1.5174043206212071,win,True
+60_parallel_mixed_10000000_s731,bytes,mixed,10000000,,ms,GravitEon Parallel Sort,Microsoft PPL Buffered Sort,558.0193,902.0591,1.6165374566793655,win,True
+60_parallel_mixed_10000000_s731,bytes,mixed,10000000,,ms,GravitEon Sort,std::sort,1092.3633,3403.0676,3.1153258261239642,win,True
+60_parallel_mixed_10000000_s731,utf16,mixed,10000000,,ms,GravitEon Sort,std::sort,1112.4446,5643.346,5.072923181972387,win,True
+60_parallel_mixed_10000000_s731,utf16,mixed,10000000,,ms,GravitEon Parallel Sort,Microsoft PPL Buffered Sort,523.5186,1650.1802,3.1520946915735184,win,True
+61_lookup-stress_duplicates95_10000000_s731,bytes,duplicates95,10000000,hit,ns_per_query,GravitEon Lookup,ankerl::unordered_dense,10.9016418457,13.6680603027,1.2537616348211966,win,True
+61_lookup-stress_duplicates95_10000000_s731,bytes,duplicates95,10000000,hot_hits,ns_per_query,GravitEon Lookup,ankerl::unordered_dense,8.82425308228,11.7526054382,1.331852716441285,win,True
+61_lookup-stress_duplicates95_10000000_s731,bytes,duplicates95,10000000,append_miss,ns_per_query,GravitEon Lookup,absl::flat_hash_map,1.43938064575,8.80088806152,6.114357649247279,win,True
+61_lookup-stress_duplicates95_10000000_s731,bytes,duplicates95,10000000,early_miss,ns_per_query,GravitEon Lookup,absl::flat_hash_map,1.44844055176,8.7423324585,6.0356860679419615,win,True
+61_lookup-stress_duplicates95_10000000_s731,bytes,duplicates95,10000000,same_alphabet_miss,ns_per_query,GravitEon Lookup,absl::flat_hash_map,5.90877532959,8.77933502197,1.4858129700760148,win,True
+61_lookup-stress_duplicates95_10000000_s731,bytes,duplicates95,10000000,interior_miss,ns_per_query,GravitEon Lookup,boost::unordered_flat_map,8.66851806641,11.1266136169,1.283565833474464,win,True
+61_lookup-stress_duplicates95_10000000_s731,bytes,duplicates95,10000000,mixed,ns_per_query,GravitEon Lookup,boost::unordered_flat_map,10.5302810669,14.8366928101,1.4089550616779274,win,True
+61_lookup-stress_duplicates95_10000000_s731,utf16,duplicates95,10000000,hit,ns_per_query,GravitEon Lookup,ankerl::unordered_dense,12.0379447937,26.2588500977,2.181339966888903,win,True
+61_lookup-stress_duplicates95_10000000_s731,utf16,duplicates95,10000000,hot_hits,ns_per_query,GravitEon Lookup,ankerl::unordered_dense,9.94987487793,24.0820884705,2.420340835030692,win,True
+61_lookup-stress_duplicates95_10000000_s731,utf16,duplicates95,10000000,append_miss,ns_per_query,GravitEon Lookup,ankerl::unordered_dense,1.43404006958,10.1188659668,7.056194719693991,win,True
+61_lookup-stress_duplicates95_10000000_s731,utf16,duplicates95,10000000,early_miss,ns_per_query,GravitEon Lookup,ankerl::unordered_dense,1.43632888794,9.98210906982,6.949737733212662,win,True
+61_lookup-stress_duplicates95_10000000_s731,utf16,duplicates95,10000000,same_alphabet_miss,ns_per_query,GravitEon Lookup,ankerl::unordered_dense,6.97956085205,9.94110107422,1.4243161260353727,win,True
+61_lookup-stress_duplicates95_10000000_s731,utf16,duplicates95,10000000,interior_miss,ns_per_query,GravitEon Lookup,ankerl::unordered_dense,9.77764129639,16.605091095,1.698271657923344,win,True
+61_lookup-stress_duplicates95_10000000_s731,utf16,duplicates95,10000000,mixed,ns_per_query,GravitEon Lookup,ankerl::unordered_dense,11.5869522095,21.2070465088,1.830252349829544,win,True
+61_lookup-stress_duplicates95_10000000_s731,bytes,duplicates95,10000000,,build_ms,GravitEon Lookup,ankerl::unordered_dense,206.8487,277.6931,1.3424938131107422,win,True
+61_lookup-stress_duplicates95_10000000_s731,utf16,duplicates95,10000000,,build_ms,GravitEon Lookup,ankerl::unordered_dense,216.5543,395.4201,1.8259628185632886,win,True
+62_parallel_duplicates95_10000000_s731,bytes,duplicates95,10000000,,ms,GravitEon Parallel Sort,Microsoft PPL Sort,260.18,650.9196,2.5018049042970247,win,True
+62_parallel_duplicates95_10000000_s731,bytes,duplicates95,10000000,,ms,GravitEon Sort,std::sort,534.5627,1166.2898,2.18176427199279,win,True
+62_parallel_duplicates95_10000000_s731,utf16,duplicates95,10000000,,ms,GravitEon Sort,std::sort,597.5464,1550.8884,2.595427568469997,win,True
+62_parallel_duplicates95_10000000_s731,utf16,duplicates95,10000000,,ms,GravitEon Parallel Sort,Microsoft PPL Buffered Sort,321.4254,842.0188,2.619639891558041,win,True
+63_lookup-stress_binary_10000000_s731,bytes,binary,10000000,hit,ns_per_query,GravitEon Lookup,boost::unordered_flat_map,49.1444587708,53.0169487,1.0787980990341255,win,True
+63_lookup-stress_binary_10000000_s731,bytes,binary,10000000,hot_hits,ns_per_query,GravitEon Lookup,ankerl::unordered_dense,9.96370315552,14.4872665405,1.4540042305931102,win,True
+63_lookup-stress_binary_10000000_s731,bytes,binary,10000000,append_miss,ns_per_query,GravitEon Lookup,boost::unordered_flat_map,16.5903091431,19.8149681091,1.1943700348309152,win,True
+63_lookup-stress_binary_10000000_s731,bytes,binary,10000000,early_miss,ns_per_query,GravitEon Lookup,boost::unordered_flat_map,16.7775154114,19.7003364563,1.1742106011068838,win,True
+63_lookup-stress_binary_10000000_s731,bytes,binary,10000000,same_alphabet_miss,ns_per_query,GravitEon Lookup,boost::unordered_flat_map,16.8069839478,19.5601463318,1.1638106154293306,win,True
+63_lookup-stress_binary_10000000_s731,bytes,binary,10000000,interior_miss,ns_per_query,GravitEon Lookup,boost::unordered_flat_map,16.7727470398,19.5658683777,1.1665273631845883,win,True
+63_lookup-stress_binary_10000000_s731,bytes,binary,10000000,mixed,ns_per_query,GravitEon Lookup,boost::unordered_flat_map,43.5461997986,40.2578353882,0.9244856169859001,loss,True
+63_lookup-stress_binary_10000000_s731,utf16,binary,10000000,hit,ns_per_query,GravitEon Lookup,ankerl::unordered_dense,52.9032707214,108.487796783,2.050682222547639,win,True
+63_lookup-stress_binary_10000000_s731,utf16,binary,10000000,hot_hits,ns_per_query,GravitEon Lookup,ankerl::unordered_dense,11.9665145874,29.90026474,2.4986611198788933,win,True
+63_lookup-stress_binary_10000000_s731,utf16,binary,10000000,append_miss,ns_per_query,GravitEon Lookup,ankerl::unordered_dense,18.3156967163,25.5338668823,1.3940974934126427,win,True
+63_lookup-stress_binary_10000000_s731,utf16,binary,10000000,early_miss,ns_per_query,GravitEon Lookup,ankerl::unordered_dense,18.3241844177,25.7409095764,1.404750628439207,win,True
+63_lookup-stress_binary_10000000_s731,utf16,binary,10000000,same_alphabet_miss,ns_per_query,GravitEon Lookup,ankerl::unordered_dense,18.1412696838,25.0942230225,1.3832671836034127,win,True
+63_lookup-stress_binary_10000000_s731,utf16,binary,10000000,interior_miss,ns_per_query,GravitEon Lookup,ankerl::unordered_dense,18.2447433472,25.4942893982,1.3973498510250395,win,True
+63_lookup-stress_binary_10000000_s731,utf16,binary,10000000,mixed,ns_per_query,GravitEon Lookup,ankerl::unordered_dense,45.5032348633,65.1605606079,1.4319984239286323,win,True
+63_lookup-stress_binary_10000000_s731,bytes,binary,10000000,,build_ms,GravitEon Lookup,ankerl::unordered_dense,662.3276,882.012,1.331685407644193,win,True
+63_lookup-stress_binary_10000000_s731,utf16,binary,10000000,,build_ms,GravitEon Lookup,ankerl::unordered_dense,731.5701,995.5388,1.3608248888247347,win,True
+64_parallel_binary_10000000_s731,bytes,binary,10000000,,ms,GravitEon Parallel Sort,Microsoft PPL Buffered Sort,270.6947,1255.9523,4.639737312921161,win,True
+64_parallel_binary_10000000_s731,bytes,binary,10000000,,ms,GravitEon Sort,std::sort,640.8632,5598.919,8.73652754597237,win,True
+64_parallel_binary_10000000_s731,utf16,binary,10000000,,ms,GravitEon Sort,std::sort,765.3561,2954.4576,3.86023917494092,win,True
+64_parallel_binary_10000000_s731,utf16,binary,10000000,,ms,GravitEon Parallel Sort,Microsoft PPL Buffered Sort,357.0178,814.9494,2.282657615390605,win,True
+65_lookup-stress_bank_ids_10000000_s731,bytes,bank_ids,10000000,hit,ns_per_query,GravitEon Lookup,boost::unordered_flat_map,53.5206794739,47.1709251404,0.8813588617349947,loss,True
+65_lookup-stress_bank_ids_10000000_s731,bytes,bank_ids,10000000,hot_hits,ns_per_query,GravitEon Lookup,ankerl::unordered_dense,9.11331176758,12.2403144836,1.3431247383793128,win,True
+65_lookup-stress_bank_ids_10000000_s731,bytes,bank_ids,10000000,append_miss,ns_per_query,GravitEon Lookup,boost::unordered_flat_map,13.7552261353,16.5566444397,1.2036621046316882,win,True
+65_lookup-stress_bank_ids_10000000_s731,bytes,bank_ids,10000000,early_miss,ns_per_query,GravitEon Lookup,boost::unordered_flat_map,2.57148742676,16.0189628601,6.229454086922537,win,True
+65_lookup-stress_bank_ids_10000000_s731,bytes,bank_ids,10000000,same_alphabet_miss,ns_per_query,GravitEon Lookup,boost::unordered_flat_map,15.2226448059,14.8979187012,0.9786682203493218,near,True
+65_lookup-stress_bank_ids_10000000_s731,bytes,bank_ids,10000000,interior_miss,ns_per_query,GravitEon Lookup,boost::unordered_flat_map,15.2565956116,15.1294708252,0.9916675522091348,near,True
+65_lookup-stress_bank_ids_10000000_s731,bytes,bank_ids,10000000,mixed,ns_per_query,GravitEon Lookup,boost::unordered_flat_map,46.1780548096,37.717628479,0.8167868619524191,loss,True
+65_lookup-stress_bank_ids_10000000_s731,utf16,bank_ids,10000000,hit,ns_per_query,GravitEon Lookup,ankerl::unordered_dense,50.4669189453,100.412750244,1.9896746689219367,win,True
+65_lookup-stress_bank_ids_10000000_s731,utf16,bank_ids,10000000,hot_hits,ns_per_query,GravitEon Lookup,ankerl::unordered_dense,11.3373756409,25.6014823914,2.258148905205338,win,True
+65_lookup-stress_bank_ids_10000000_s731,utf16,bank_ids,10000000,append_miss,ns_per_query,GravitEon Lookup,ankerl::unordered_dense,15.6346321106,22.0964431763,1.4133011266263826,win,True
+65_lookup-stress_bank_ids_10000000_s731,utf16,bank_ids,10000000,early_miss,ns_per_query,GravitEon Lookup,ankerl::unordered_dense,3.06129455566,21.9700813293,7.176728971957211,win,True
+65_lookup-stress_bank_ids_10000000_s731,utf16,bank_ids,10000000,same_alphabet_miss,ns_per_query,GravitEon Lookup,ankerl::unordered_dense,17.2429084778,21.2258338928,1.2309891872434375,win,True
+65_lookup-stress_bank_ids_10000000_s731,utf16,bank_ids,10000000,interior_miss,ns_per_query,GravitEon Lookup,ankerl::unordered_dense,16.9748306274,21.3316917419,1.256665955032703,win,True
+65_lookup-stress_bank_ids_10000000_s731,utf16,bank_ids,10000000,mixed,ns_per_query,GravitEon Lookup,ankerl::unordered_dense,45.4119682312,55.4944038391,1.2220215507191545,win,True
+65_lookup-stress_bank_ids_10000000_s731,bytes,bank_ids,10000000,,build_ms,GravitEon Lookup,ankerl::unordered_dense,611.2914,808.3026,1.3222868831460741,win,True
+65_lookup-stress_bank_ids_10000000_s731,utf16,bank_ids,10000000,,build_ms,GravitEon Lookup,ankerl::unordered_dense,720.2397,855.4724,1.1877606857828027,win,True
+66_parallel_bank_ids_10000000_s731,bytes,bank_ids,10000000,,ms,GravitEon Parallel Sort,Microsoft PPL Buffered Sort,698.7721,1259.6114,1.802606887138167,win,True
+66_parallel_bank_ids_10000000_s731,bytes,bank_ids,10000000,,ms,GravitEon Sort,std::sort,1917.6059,5573.5251,2.906501852127176,win,True
+66_parallel_bank_ids_10000000_s731,utf16,bank_ids,10000000,,ms,GravitEon Sort,std::sort,2278.5542,7436.375,3.263637529447401,win,True
+66_parallel_bank_ids_10000000_s731,utf16,bank_ids,10000000,,ms,GravitEon Parallel Sort,Microsoft PPL Buffered Sort,824.5484,1761.9721,2.136893480115903,win,True
+67_lookup-stress_zipf_hot_10000000_s731,bytes,zipf_hot,10000000,hit,ns_per_query,GravitEon Lookup,ankerl::unordered_dense,14.3151283264,16.374874115,1.1438859465060758,win,True
+67_lookup-stress_zipf_hot_10000000_s731,bytes,zipf_hot,10000000,hot_hits,ns_per_query,GravitEon Lookup,ankerl::unordered_dense,8.65507125854,11.1656188965,1.2900666629963133,win,True
+67_lookup-stress_zipf_hot_10000000_s731,bytes,zipf_hot,10000000,append_miss,ns_per_query,GravitEon Lookup,boost::unordered_flat_map,1.43918991089,10.545539856,7.327413690302069,win,True
+67_lookup-stress_zipf_hot_10000000_s731,bytes,zipf_hot,10000000,early_miss,ns_per_query,GravitEon Lookup,boost::unordered_flat_map,1.4386177063,10.512638092,7.307457739441837,win,True
+67_lookup-stress_zipf_hot_10000000_s731,bytes,zipf_hot,10000000,same_alphabet_miss,ns_per_query,GravitEon Lookup,boost::unordered_flat_map,7.81621932983,10.5965614319,1.3557144425897873,win,True
+67_lookup-stress_zipf_hot_10000000_s731,bytes,zipf_hot,10000000,interior_miss,ns_per_query,GravitEon Lookup,boost::unordered_flat_map,8.60471725464,11.5515708923,1.3424695490221878,win,True
+67_lookup-stress_zipf_hot_10000000_s731,bytes,zipf_hot,10000000,mixed,ns_per_query,GravitEon Lookup,boost::unordered_flat_map,11.58618927,15.6918525696,1.354358383410044,win,True
+67_lookup-stress_zipf_hot_10000000_s731,utf16,zipf_hot,10000000,hit,ns_per_query,GravitEon Lookup,ankerl::unordered_dense,15.8466339111,21.934223175,1.3841566163547112,win,True
+67_lookup-stress_zipf_hot_10000000_s731,utf16,zipf_hot,10000000,hot_hits,ns_per_query,GravitEon Lookup,ankerl::unordered_dense,8.81462097168,12.4864578247,1.4165620807539017,win,True
+67_lookup-stress_zipf_hot_10000000_s731,utf16,zipf_hot,10000000,append_miss,ns_per_query,GravitEon Lookup,ankerl::unordered_dense,1.41401290894,11.9423866272,8.445740878103075,win,True
+67_lookup-stress_zipf_hot_10000000_s731,utf16,zipf_hot,10000000,early_miss,ns_per_query,GravitEon Lookup,ankerl::unordered_dense,1.38998031616,11.8183135986,8.502504288153963,win,True
+67_lookup-stress_zipf_hot_10000000_s731,utf16,zipf_hot,10000000,same_alphabet_miss,ns_per_query,GravitEon Lookup,ankerl::unordered_dense,7.77893066406,12.0994567871,1.5554138877984316,win,True
+67_lookup-stress_zipf_hot_10000000_s731,utf16,zipf_hot,10000000,interior_miss,ns_per_query,GravitEon Lookup,ankerl::unordered_dense,8.9898109436,16.2220954895,1.804497957885175,win,True
+67_lookup-stress_zipf_hot_10000000_s731,utf16,zipf_hot,10000000,mixed,ns_per_query,GravitEon Lookup,ankerl::unordered_dense,12.6912117004,19.0744400024,1.5029644491549072,win,True
+67_lookup-stress_zipf_hot_10000000_s731,bytes,zipf_hot,10000000,,build_ms,GravitEon Lookup,ankerl::unordered_dense,242.0546,259.0762,1.0703213241971026,win,True
+67_lookup-stress_zipf_hot_10000000_s731,utf16,zipf_hot,10000000,,build_ms,GravitEon Lookup,ankerl::unordered_dense,235.3027,316.9128,1.3468302743657425,win,True
+68_parallel_zipf_hot_10000000_s731,bytes,zipf_hot,10000000,,ms,GravitEon Parallel Sort,Microsoft PPL Buffered Sort,457.761,609.8091,1.332156081448616,win,True
+68_parallel_zipf_hot_10000000_s731,bytes,zipf_hot,10000000,,ms,GravitEon Sort,std::sort,716.1101,1644.5356,2.296484297596138,win,True
+68_parallel_zipf_hot_10000000_s731,utf16,zipf_hot,10000000,,ms,GravitEon Sort,std::sort,807.2106,2292.3954,2.8398975434663516,win,True
+68_parallel_zipf_hot_10000000_s731,utf16,zipf_hot,10000000,,ms,GravitEon Parallel Sort,Microsoft PPL Buffered Sort,507.9425,804.7853,1.5844023683783106,win,True
+69_lookup-stress_unicode_1000000_s2027,bytes,unicode,1000000,hit,ns_per_query,GravitEon Lookup,boost::unordered_flat_map,31.0497283936,34.7974777222,1.120701517291613,win,True
+69_lookup-stress_unicode_1000000_s2027,bytes,unicode,1000000,hot_hits,ns_per_query,GravitEon Lookup,ankerl::unordered_dense,7.95516967773,11.7709159851,1.479656181068261,win,True
+69_lookup-stress_unicode_1000000_s2027,bytes,unicode,1000000,append_miss,ns_per_query,GravitEon Lookup,ankerl::unordered_dense,9.30309295654,13.4921073914,1.4502819067195447,win,True
+69_lookup-stress_unicode_1000000_s2027,bytes,unicode,1000000,early_miss,ns_per_query,GravitEon Lookup,absl::flat_hash_map,1.93767547607,13.4368896484,6.934540801255712,win,True
+69_lookup-stress_unicode_1000000_s2027,bytes,unicode,1000000,same_alphabet_miss,ns_per_query,GravitEon Lookup,ankerl::unordered_dense,9.47599411011,13.4121894836,1.4153860088716654,win,True
+69_lookup-stress_unicode_1000000_s2027,bytes,unicode,1000000,interior_miss,ns_per_query,GravitEon Lookup,ankerl::unordered_dense,9.43937301636,13.4822845459,1.4283029733577606,win,True
+69_lookup-stress_unicode_1000000_s2027,bytes,unicode,1000000,mixed,ns_per_query,GravitEon Lookup,boost::unordered_flat_map,23.5162734985,28.1798362732,1.198312150732448,win,True
+69_lookup-stress_unicode_1000000_s2027,utf16,unicode,1000000,hit,ns_per_query,GravitEon Lookup,ankerl::unordered_dense,32.3453903198,38.5869979858,1.1929674554639471,win,True
+69_lookup-stress_unicode_1000000_s2027,utf16,unicode,1000000,hot_hits,ns_per_query,GravitEon Lookup,ankerl::unordered_dense,8.25109481812,12.4523162842,1.509171395879952,win,True
+69_lookup-stress_unicode_1000000_s2027,utf16,unicode,1000000,append_miss,ns_per_query,GravitEon Lookup,absl::flat_hash_map,8.89415740967,12.7953529358,1.4386245201696681,win,True
+69_lookup-stress_unicode_1000000_s2027,utf16,unicode,1000000,early_miss,ns_per_query,GravitEon Lookup,absl::flat_hash_map,8.59146118164,12.4755859375,1.4520912885179993,win,True
+69_lookup-stress_unicode_1000000_s2027,utf16,unicode,1000000,same_alphabet_miss,ns_per_query,GravitEon Lookup,ankerl::unordered_dense,9.30051803589,12.9864692688,1.3963167663012093,win,True
+69_lookup-stress_unicode_1000000_s2027,utf16,unicode,1000000,interior_miss,ns_per_query,GravitEon Lookup,ankerl::unordered_dense,9.48486328125,12.9974365234,1.3703346203306666,win,True
+69_lookup-stress_unicode_1000000_s2027,utf16,unicode,1000000,mixed,ns_per_query,GravitEon Lookup,ankerl::unordered_dense,23.866558075,31.5440177917,1.3216827366800774,win,True
+69_lookup-stress_unicode_1000000_s2027,bytes,unicode,1000000,,build_ms,GravitEon Lookup,boost::unordered_flat_map,40.917,55.6701,1.3605616247525478,win,True
+69_lookup-stress_unicode_1000000_s2027,utf16,unicode,1000000,,build_ms,GravitEon Lookup,ankerl::unordered_dense,40.8709,56.9914,1.394424884208569,win,True
+70_parallel_unicode_1000000_s2027,bytes,unicode,1000000,,ms,GravitEon Sort,std::sort,140.3988,328.1464,2.3372450476784703,win,True
+70_parallel_unicode_1000000_s2027,bytes,unicode,1000000,,ms,GravitEon Parallel Sort,Microsoft PPL Buffered Sort,48.259,87.8149,1.819658509293603,win,True
+70_parallel_unicode_1000000_s2027,utf16,unicode,1000000,,ms,GravitEon Parallel Sort,Microsoft PPL Buffered Sort,46.9144,60.2079,1.2833564960864894,win,True
+70_parallel_unicode_1000000_s2027,utf16,unicode,1000000,,ms,GravitEon Sort,std::sort,124.392,222.7213,1.7904792912727507,win,True
+71_lookup-stress_same_edges_1000000_s2027,bytes,same_edges,1000000,hit,ns_per_query,GravitEon Lookup,boost::unordered_flat_map,37.4388694763,58.6728096008,1.567162962491209,win,True
+71_lookup-stress_same_edges_1000000_s2027,bytes,same_edges,1000000,hot_hits,ns_per_query,GravitEon Lookup,ankerl::unordered_dense,10.6808662415,19.3108558655,1.8079859281889124,win,True
+71_lookup-stress_same_edges_1000000_s2027,bytes,same_edges,1000000,append_miss,ns_per_query,GravitEon Lookup,ankerl::unordered_dense,1.42202377319,18.1293487549,12.748977265148502,win,True
+71_lookup-stress_same_edges_1000000_s2027,bytes,same_edges,1000000,early_miss,ns_per_query,GravitEon Lookup,ankerl::unordered_dense,1.42908096313,18.1871414185,12.726459793198966,win,True
+71_lookup-stress_same_edges_1000000_s2027,bytes,same_edges,1000000,same_alphabet_miss,ns_per_query,GravitEon Lookup,ankerl::unordered_dense,10.555267334,17.2848701477,1.6375587278612078,win,True
+71_lookup-stress_same_edges_1000000_s2027,bytes,same_edges,1000000,interior_miss,ns_per_query,GravitEon Lookup,ankerl::unordered_dense,17.2485351562,17.539024353,1.0168413835823955,near,True
+71_lookup-stress_same_edges_1000000_s2027,bytes,same_edges,1000000,mixed,ns_per_query,GravitEon Lookup,boost::unordered_flat_map,28.2189369202,40.2139663696,1.4250702102393369,win,True
+71_lookup-stress_same_edges_1000000_s2027,utf16,same_edges,1000000,hit,ns_per_query,GravitEon Lookup,ankerl::unordered_dense,251.322937012,105.846977234,0.4211592403479913,loss,True
+71_lookup-stress_same_edges_1000000_s2027,utf16,same_edges,1000000,hot_hits,ns_per_query,GravitEon Lookup,ankerl::unordered_dense,15.7717704773,48.5415458679,3.0777486863484915,win,True
+71_lookup-stress_same_edges_1000000_s2027,utf16,same_edges,1000000,append_miss,ns_per_query,GravitEon Lookup,ankerl::unordered_dense,1.38645172119,20.9508895874,15.111156967959708,win,True
+71_lookup-stress_same_edges_1000000_s2027,utf16,same_edges,1000000,early_miss,ns_per_query,GravitEon Lookup,ankerl::unordered_dense,1.4063835144,20.9774017334,14.915847291021118,win,True
+71_lookup-stress_same_edges_1000000_s2027,utf16,same_edges,1000000,same_alphabet_miss,ns_per_query,GravitEon Lookup,ankerl::unordered_dense,11.4947319031,20.0284957886,1.7424065178239208,win,True
+71_lookup-stress_same_edges_1000000_s2027,utf16,same_edges,1000000,interior_miss,ns_per_query,GravitEon Lookup,ankerl::unordered_dense,41.7810440063,20.1505661011,0.4822896741896056,loss,True
+71_lookup-stress_same_edges_1000000_s2027,utf16,same_edges,1000000,mixed,ns_per_query,GravitEon Lookup,ankerl::unordered_dense,107.018661499,63.1542205811,0.5901234391881282,loss,True
+71_lookup-stress_same_edges_1000000_s2027,bytes,same_edges,1000000,,build_ms,GravitEon Lookup,boost::unordered_flat_map,31.2313,71.0155,2.2738566758348195,win,True
+71_lookup-stress_same_edges_1000000_s2027,utf16,same_edges,1000000,,build_ms,GravitEon Lookup,ankerl::unordered_dense,93.9411,92.6221,0.985959287255525,near,True
+72_parallel_same_edges_1000000_s2027,bytes,same_edges,1000000,,ms,GravitEon Sort,std::sort,90.4274,346.045,3.8267715316375344,win,True
+72_parallel_same_edges_1000000_s2027,bytes,same_edges,1000000,,ms,GravitEon Parallel Sort,Microsoft PPL Buffered Sort,40.1177,91.015,2.2686993521562804,win,True
+72_parallel_same_edges_1000000_s2027,utf16,same_edges,1000000,,ms,GravitEon Parallel Sort,Microsoft PPL Buffered Sort,42.7933,177.6152,4.150537584154528,win,True
+72_parallel_same_edges_1000000_s2027,utf16,same_edges,1000000,,ms,GravitEon Sort,std::sort,98.7189,777.6895,7.877817722847397,win,True
+73_lookup-stress_split_prefix_1000000_s2027,bytes,split_prefix,1000000,hit,ns_per_query,GravitEon Lookup,ankerl::unordered_dense,36.1588478088,46.9435691833,1.298259541662589,win,True
+73_lookup-stress_split_prefix_1000000_s2027,bytes,split_prefix,1000000,hot_hits,ns_per_query,GravitEon Lookup,ankerl::unordered_dense,10.3260993958,14.5404815674,1.4081291502301578,win,True
+73_lookup-stress_split_prefix_1000000_s2027,bytes,split_prefix,1000000,append_miss,ns_per_query,GravitEon Lookup,ankerl::unordered_dense,9.7297668457,14.3720626831,1.4771230298752356,win,True
+73_lookup-stress_split_prefix_1000000_s2027,bytes,split_prefix,1000000,early_miss,ns_per_query,GravitEon Lookup,ankerl::unordered_dense,2.52046585083,14.360332489,5.697491392026232,win,True
+73_lookup-stress_split_prefix_1000000_s2027,bytes,split_prefix,1000000,same_alphabet_miss,ns_per_query,GravitEon Lookup,ankerl::unordered_dense,10.2499008179,14.1896247864,1.3843670332516613,win,True
+73_lookup-stress_split_prefix_1000000_s2027,bytes,split_prefix,1000000,interior_miss,ns_per_query,GravitEon Lookup,ankerl::unordered_dense,10.4968070984,14.336681366,1.3658135499303692,win,True
+73_lookup-stress_split_prefix_1000000_s2027,bytes,split_prefix,1000000,mixed,ns_per_query,GravitEon Lookup,boost::unordered_flat_map,31.2669754028,34.449672699,1.101791019284679,win,True
+73_lookup-stress_split_prefix_1000000_s2027,utf16,split_prefix,1000000,hit,ns_per_query,GravitEon Lookup,ankerl::unordered_dense,39.3303871155,89.7624969482,2.282268330708213,win,True
+73_lookup-stress_split_prefix_1000000_s2027,utf16,split_prefix,1000000,hot_hits,ns_per_query,GravitEon Lookup,ankerl::unordered_dense,11.8828773499,34.6028327942,2.911991075502534,win,True
+73_lookup-stress_split_prefix_1000000_s2027,utf16,split_prefix,1000000,append_miss,ns_per_query,GravitEon Lookup,ankerl::unordered_dense,11.1168861389,17.905330658,1.6106426236881208,win,True
+73_lookup-stress_split_prefix_1000000_s2027,utf16,split_prefix,1000000,early_miss,ns_per_query,GravitEon Lookup,ankerl::unordered_dense,3.02324295044,17.8199768066,5.894325100140065,win,True
+73_lookup-stress_split_prefix_1000000_s2027,utf16,split_prefix,1000000,same_alphabet_miss,ns_per_query,GravitEon Lookup,ankerl::unordered_dense,11.4430427551,17.7919387817,1.5548258590373953,win,True
+73_lookup-stress_split_prefix_1000000_s2027,utf16,split_prefix,1000000,interior_miss,ns_per_query,GravitEon Lookup,ankerl::unordered_dense,12.2138977051,17.8966522217,1.4652695358851027,win,True
+73_lookup-stress_split_prefix_1000000_s2027,utf16,split_prefix,1000000,mixed,ns_per_query,GravitEon Lookup,ankerl::unordered_dense,31.3932418823,52.1636962891,1.6616218383776002,win,True
+73_lookup-stress_split_prefix_1000000_s2027,bytes,split_prefix,1000000,,build_ms,GravitEon Lookup,boost::unordered_flat_map,45.5213,61.9125,1.360077590051251,win,True
+73_lookup-stress_split_prefix_1000000_s2027,utf16,split_prefix,1000000,,build_ms,GravitEon Lookup,ankerl::unordered_dense,38.5175,83.2837,2.162230155124294,win,True
+74_parallel_split_prefix_1000000_s2027,bytes,split_prefix,1000000,,ms,GravitEon Sort,std::sort,125.2513,422.2267,3.3710364682841614,win,True
+74_parallel_split_prefix_1000000_s2027,bytes,split_prefix,1000000,,ms,GravitEon Parallel Sort,Microsoft PPL Buffered Sort,50.3411,100.355,1.993500340675909,win,True
+74_parallel_split_prefix_1000000_s2027,utf16,split_prefix,1000000,,ms,GravitEon Parallel Sort,Microsoft PPL Buffered Sort,65.2419,199.0008,3.0501993350898733,win,True
+74_parallel_split_prefix_1000000_s2027,utf16,split_prefix,1000000,,ms,GravitEon Sort,std::sort,143.1401,890.3575,6.220182185145882,win,True
+75_lookup-stress_skewed_prefix_1000000_s2027,bytes,skewed_prefix,1000000,hit,ns_per_query,GravitEon Lookup,ankerl::unordered_dense,35.9794616699,46.8458175659,1.302015521957925,win,True
+75_lookup-stress_skewed_prefix_1000000_s2027,bytes,skewed_prefix,1000000,hot_hits,ns_per_query,GravitEon Lookup,ankerl::unordered_dense,9.95454788208,14.167881012,1.4232571061820667,win,True
+75_lookup-stress_skewed_prefix_1000000_s2027,bytes,skewed_prefix,1000000,append_miss,ns_per_query,GravitEon Lookup,ankerl::unordered_dense,9.63745117188,14.1741752625,1.4707389962044302,win,True
+75_lookup-stress_skewed_prefix_1000000_s2027,bytes,skewed_prefix,1000000,early_miss,ns_per_query,GravitEon Lookup,ankerl::unordered_dense,2.47716903687,14.1521453857,5.71303176128093,win,True
+75_lookup-stress_skewed_prefix_1000000_s2027,bytes,skewed_prefix,1000000,same_alphabet_miss,ns_per_query,GravitEon Lookup,ankerl::unordered_dense,10.2269172668,14.1230583191,1.3809692550215675,win,True
+75_lookup-stress_skewed_prefix_1000000_s2027,bytes,skewed_prefix,1000000,interior_miss,ns_per_query,GravitEon Lookup,ankerl::unordered_dense,10.3320121765,14.0502929688,1.359879637071777,win,True
+75_lookup-stress_skewed_prefix_1000000_s2027,bytes,skewed_prefix,1000000,mixed,ns_per_query,GravitEon Lookup,boost::unordered_flat_map,30.78956604,34.2883110046,1.1136341109859955,win,True
+75_lookup-stress_skewed_prefix_1000000_s2027,utf16,skewed_prefix,1000000,hit,ns_per_query,GravitEon Lookup,ankerl::unordered_dense,39.2204284668,88.2926940918,2.2511914719784247,win,True
+75_lookup-stress_skewed_prefix_1000000_s2027,utf16,skewed_prefix,1000000,hot_hits,ns_per_query,GravitEon Lookup,ankerl::unordered_dense,11.6268157959,33.06016922,2.8434413858743772,win,True
+75_lookup-stress_skewed_prefix_1000000_s2027,utf16,skewed_prefix,1000000,append_miss,ns_per_query,GravitEon Lookup,ankerl::unordered_dense,11.0413551331,17.8394317627,1.6156922359304056,win,True
+75_lookup-stress_skewed_prefix_1000000_s2027,utf16,skewed_prefix,1000000,early_miss,ns_per_query,GravitEon Lookup,ankerl::unordered_dense,3.04508209229,17.6832199097,5.807140620107765,win,True
+75_lookup-stress_skewed_prefix_1000000_s2027,utf16,skewed_prefix,1000000,same_alphabet_miss,ns_per_query,GravitEon Lookup,ankerl::unordered_dense,11.4676475525,17.8140640259,1.5534192121222326,win,True
+75_lookup-stress_skewed_prefix_1000000_s2027,utf16,skewed_prefix,1000000,interior_miss,ns_per_query,GravitEon Lookup,ankerl::unordered_dense,12.2670173645,17.7903175354,1.450256163073845,win,True
+75_lookup-stress_skewed_prefix_1000000_s2027,utf16,skewed_prefix,1000000,mixed,ns_per_query,GravitEon Lookup,ankerl::unordered_dense,31.2942504883,52.0347595215,1.662757813642294,win,True
+75_lookup-stress_skewed_prefix_1000000_s2027,bytes,skewed_prefix,1000000,,build_ms,GravitEon Lookup,boost::unordered_flat_map,46.2665,62.6032,1.3530999751440027,win,True
+75_lookup-stress_skewed_prefix_1000000_s2027,utf16,skewed_prefix,1000000,,build_ms,GravitEon Lookup,ankerl::unordered_dense,39.5483,84.1867,2.128705911505678,win,True
+76_parallel_skewed_prefix_1000000_s2027,bytes,skewed_prefix,1000000,,ms,GravitEon Sort,std::sort,109.6565,411.0226,3.7482739281301156,win,True
+76_parallel_skewed_prefix_1000000_s2027,bytes,skewed_prefix,1000000,,ms,GravitEon Parallel Sort,Microsoft PPL Buffered Sort,51.8662,100.7418,1.9423400981756904,win,True
+76_parallel_skewed_prefix_1000000_s2027,utf16,skewed_prefix,1000000,,ms,GravitEon Parallel Sort,Microsoft PPL Buffered Sort,65.0544,201.994,3.1050013527140363,win,True
+76_parallel_skewed_prefix_1000000_s2027,utf16,skewed_prefix,1000000,,ms,GravitEon Sort,std::sort,145.5472,868.3633,5.966197219870942,win,True
+77_lookup-stress_utf16_outlier_1000000_s2027,bytes,utf16_outlier,1000000,hit,ns_per_query,GravitEon Lookup,boost::unordered_flat_map,30.7611465454,32.9035758972,1.0696472528628935,win,True
+77_lookup-stress_utf16_outlier_1000000_s2027,bytes,utf16_outlier,1000000,hot_hits,ns_per_query,GravitEon Lookup,ankerl::unordered_dense,6.75258636475,11.0071182251,1.6300595994683755,win,True
+77_lookup-stress_utf16_outlier_1000000_s2027,bytes,utf16_outlier,1000000,append_miss,ns_per_query,GravitEon Lookup,ankerl::unordered_dense,8.91122817993,12.0025634766,1.3469033935897134,win,True
+77_lookup-stress_utf16_outlier_1000000_s2027,bytes,utf16_outlier,1000000,early_miss,ns_per_query,GravitEon Lookup,ankerl::unordered_dense,2.03676223755,11.9455337524,5.864962307416479,win,True
+77_lookup-stress_utf16_outlier_1000000_s2027,bytes,utf16_outlier,1000000,same_alphabet_miss,ns_per_query,GravitEon Lookup,ankerl::unordered_dense,8.68034362793,11.4744186401,1.3218852999298027,win,True
+77_lookup-stress_utf16_outlier_1000000_s2027,bytes,utf16_outlier,1000000,interior_miss,ns_per_query,GravitEon Lookup,ankerl::unordered_dense,8.70704650879,11.4837646484,1.3189047097436342,win,True
+77_lookup-stress_utf16_outlier_1000000_s2027,bytes,utf16_outlier,1000000,mixed,ns_per_query,GravitEon Lookup,boost::unordered_flat_map,21.5792655945,25.8796691895,1.1992840570114705,win,True
+77_lookup-stress_utf16_outlier_1000000_s2027,utf16,utf16_outlier,1000000,hit,ns_per_query,GravitEon Lookup,ankerl::unordered_dense,34.3015670776,45.5410957336,1.327668080894758,win,True
+77_lookup-stress_utf16_outlier_1000000_s2027,utf16,utf16_outlier,1000000,hot_hits,ns_per_query,GravitEon Lookup,ankerl::unordered_dense,8.6085319519,14.3473625183,1.6666445101749754,win,True
+77_lookup-stress_utf16_outlier_1000000_s2027,utf16,utf16_outlier,1000000,append_miss,ns_per_query,GravitEon Lookup,absl::flat_hash_map,9.46407318115,13.9857292175,1.4777706120611973,win,True
+77_lookup-stress_utf16_outlier_1000000_s2027,utf16,utf16_outlier,1000000,early_miss,ns_per_query,GravitEon Lookup,absl::flat_hash_map,2.63614654541,13.9857292175,5.305368641910914,win,True
+77_lookup-stress_utf16_outlier_1000000_s2027,utf16,utf16_outlier,1000000,same_alphabet_miss,ns_per_query,GravitEon Lookup,absl::flat_hash_map,9.86728668213,13.4016036987,1.358185297582442,win,True
+77_lookup-stress_utf16_outlier_1000000_s2027,utf16,utf16_outlier,1000000,interior_miss,ns_per_query,GravitEon Lookup,absl::flat_hash_map,9.84964370728,13.4644508362,1.3669987703462052,win,True
+77_lookup-stress_utf16_outlier_1000000_s2027,utf16,utf16_outlier,1000000,mixed,ns_per_query,GravitEon Lookup,ankerl::unordered_dense,28.8516044617,36.0753059387,1.2503743418009676,win,True
+77_lookup-stress_utf16_outlier_1000000_s2027,bytes,utf16_outlier,1000000,,build_ms,GravitEon Lookup,boost::unordered_flat_map,35.1706,47.5513,1.3520184472258079,win,True
+77_lookup-stress_utf16_outlier_1000000_s2027,utf16,utf16_outlier,1000000,,build_ms,GravitEon Lookup,ankerl::unordered_dense,41.144,59.0257,1.4346125802061054,win,True
+78_parallel_utf16_outlier_1000000_s2027,bytes,utf16_outlier,1000000,,ms,GravitEon Sort,std::sort,55.1908,288.1448,5.220884640193654,win,True
+78_parallel_utf16_outlier_1000000_s2027,bytes,utf16_outlier,1000000,,ms,GravitEon Parallel Sort,Microsoft PPL Sort,23.11,71.5986,3.0981652964084816,win,True
+78_parallel_utf16_outlier_1000000_s2027,utf16,utf16_outlier,1000000,,ms,GravitEon Parallel Sort,Microsoft PPL Buffered Sort,38.4891,60.3133,1.5670228714103474,win,True
+78_parallel_utf16_outlier_1000000_s2027,utf16,utf16_outlier,1000000,,ms,GravitEon Sort,std::sort,103.463,221.9389,2.145104046857331,win,True
+79_lookup-stress_bank_ids_binary_1000000_s2027,bytes,bank_ids_binary,1000000,hit,ns_per_query,GravitEon Lookup,boost::unordered_flat_map,32.7304840088,32.7688217163,1.0011713150190416,near,True
+79_lookup-stress_bank_ids_binary_1000000_s2027,bytes,bank_ids_binary,1000000,hot_hits,ns_per_query,GravitEon Lookup,ankerl::unordered_dense,7.31267929077,11.6302490234,1.5904224103031015,win,True
+79_lookup-stress_bank_ids_binary_1000000_s2027,bytes,bank_ids_binary,1000000,append_miss,ns_per_query,GravitEon Lookup,boost::unordered_flat_map,1.42240524292,12.7444267273,8.959772041571968,win,True
+79_lookup-stress_bank_ids_binary_1000000_s2027,bytes,bank_ids_binary,1000000,early_miss,ns_per_query,GravitEon Lookup,boost::unordered_flat_map,1.4274597168,12.7058982849,8.901055585220561,win,True
+79_lookup-stress_bank_ids_binary_1000000_s2027,bytes,bank_ids_binary,1000000,same_alphabet_miss,ns_per_query,GravitEon Lookup,boost::unordered_flat_map,8.84876251221,11.8619918823,1.3405255103108693,win,True
+79_lookup-stress_bank_ids_binary_1000000_s2027,bytes,bank_ids_binary,1000000,interior_miss,ns_per_query,GravitEon Lookup,boost::unordered_flat_map,8.78648757935,11.878490448,1.3519043122438168,win,True
+79_lookup-stress_bank_ids_binary_1000000_s2027,bytes,bank_ids_binary,1000000,mixed,ns_per_query,GravitEon Lookup,boost::unordered_flat_map,22.768497467,27.3698806763,1.2020942847005653,win,True
+79_lookup-stress_bank_ids_binary_1000000_s2027,utf16,bank_ids_binary,1000000,hit,ns_per_query,GravitEon Lookup,ankerl::unordered_dense,36.1296653748,66.1260604858,1.8302428156979864,win,True
+79_lookup-stress_bank_ids_binary_1000000_s2027,utf16,bank_ids_binary,1000000,hot_hits,ns_per_query,GravitEon Lookup,ankerl::unordered_dense,9.83724594116,23.3538627625,2.374024488376889,win,True
+79_lookup-stress_bank_ids_binary_1000000_s2027,utf16,bank_ids_binary,1000000,append_miss,ns_per_query,GravitEon Lookup,ankerl::unordered_dense,1.41382217407,14.5792007446,10.311905564920194,win,True
+79_lookup-stress_bank_ids_binary_1000000_s2027,utf16,bank_ids_binary,1000000,early_miss,ns_per_query,GravitEon Lookup,ankerl::unordered_dense,1.40514373779,14.5174026489,10.331613954123203,win,True
+79_lookup-stress_bank_ids_binary_1000000_s2027,utf16,bank_ids_binary,1000000,same_alphabet_miss,ns_per_query,GravitEon Lookup,absl::flat_hash_map,10.1559638977,13.6557579041,1.3446048097111285,win,True
+79_lookup-stress_bank_ids_binary_1000000_s2027,utf16,bank_ids_binary,1000000,interior_miss,ns_per_query,GravitEon Lookup,ankerl::unordered_dense,10.1078987122,13.8596534729,1.3711705931690548,win,True
+79_lookup-stress_bank_ids_binary_1000000_s2027,utf16,bank_ids_binary,1000000,mixed,ns_per_query,GravitEon Lookup,ankerl::unordered_dense,31.8592071533,40.5068397522,1.271432762193025,win,True
+79_lookup-stress_bank_ids_binary_1000000_s2027,bytes,bank_ids_binary,1000000,,build_ms,GravitEon Lookup,boost::unordered_flat_map,34.4508,53.6698,1.557868032092143,win,True
+79_lookup-stress_bank_ids_binary_1000000_s2027,utf16,bank_ids_binary,1000000,,build_ms,GravitEon Lookup,ankerl::unordered_dense,40.4692,59.6822,1.4747561108200804,win,True
+80_parallel_bank_ids_binary_1000000_s2027,bytes,bank_ids_binary,1000000,,ms,GravitEon Sort,std::sort,42.6691,246.6017,5.7793977374727845,win,True
+80_parallel_bank_ids_binary_1000000_s2027,bytes,bank_ids_binary,1000000,,ms,GravitEon Parallel Sort,Microsoft PPL Buffered Sort,19.6026,56.2006,2.8669972350606554,win,True
+80_parallel_bank_ids_binary_1000000_s2027,utf16,bank_ids_binary,1000000,,ms,GravitEon Parallel Sort,Microsoft PPL Buffered Sort,22.37,44.7326,1.9996691998211888,win,True
+80_parallel_bank_ids_binary_1000000_s2027,utf16,bank_ids_binary,1000000,,ms,GravitEon Sort,std::sort,50.8508,179.4198,3.5283574693023514,win,True
+81_lookup-stress_length_boundaries_1000000_s2027,bytes,length_boundaries,1000000,hit,ns_per_query,GravitEon Lookup,boost::unordered_flat_map,33.5561752319,37.9860877991,1.1320148239954573,win,True
+81_lookup-stress_length_boundaries_1000000_s2027,bytes,length_boundaries,1000000,hot_hits,ns_per_query,GravitEon Lookup,ankerl::unordered_dense,8.30841064453,11.5695953369,1.3925160697873142,win,True
+81_lookup-stress_length_boundaries_1000000_s2027,bytes,length_boundaries,1000000,append_miss,ns_per_query,GravitEon Lookup,ankerl::unordered_dense,10.5795860291,16.069316864,1.5188984540415906,win,True
+81_lookup-stress_length_boundaries_1000000_s2027,bytes,length_boundaries,1000000,early_miss,ns_per_query,GravitEon Lookup,ankerl::unordered_dense,2.71854400635,16.068649292,5.910755630391379,win,True
+81_lookup-stress_length_boundaries_1000000_s2027,bytes,length_boundaries,1000000,same_alphabet_miss,ns_per_query,GravitEon Lookup,ankerl::unordered_dense,10.6351852417,14.7996902466,1.391578041214665,win,True
+81_lookup-stress_length_boundaries_1000000_s2027,bytes,length_boundaries,1000000,interior_miss,ns_per_query,GravitEon Lookup,ankerl::unordered_dense,10.6618881226,14.8693084717,1.3946224440473665,win,True
+81_lookup-stress_length_boundaries_1000000_s2027,bytes,length_boundaries,1000000,mixed,ns_per_query,GravitEon Lookup,boost::unordered_flat_map,26.1758804321,30.2485466003,1.155588507472154,win,True
+81_lookup-stress_length_boundaries_1000000_s2027,utf16,length_boundaries,1000000,hit,ns_per_query,GravitEon Lookup,ankerl::unordered_dense,37.0969772339,62.6393318176,1.6885292681032475,win,True
+81_lookup-stress_length_boundaries_1000000_s2027,utf16,length_boundaries,1000000,hot_hits,ns_per_query,GravitEon Lookup,ankerl::unordered_dense,9.84792709351,18.6074256897,1.8894763855393184,win,True
+81_lookup-stress_length_boundaries_1000000_s2027,utf16,length_boundaries,1000000,append_miss,ns_per_query,GravitEon Lookup,ankerl::unordered_dense,11.5921974182,17.3434257507,1.4961292604860617,win,True
+81_lookup-stress_length_boundaries_1000000_s2027,utf16,length_boundaries,1000000,early_miss,ns_per_query,GravitEon Lookup,ankerl::unordered_dense,3.08990478516,17.2584533691,5.585432098745506,win,True
+81_lookup-stress_length_boundaries_1000000_s2027,utf16,length_boundaries,1000000,same_alphabet_miss,ns_per_query,GravitEon Lookup,ankerl::unordered_dense,11.9022369385,16.7153358459,1.4043860773625785,win,True
+81_lookup-stress_length_boundaries_1000000_s2027,utf16,length_boundaries,1000000,interior_miss,ns_per_query,GravitEon Lookup,ankerl::unordered_dense,11.723613739,16.5681838989,1.4132318129676995,win,True
+81_lookup-stress_length_boundaries_1000000_s2027,utf16,length_boundaries,1000000,mixed,ns_per_query,GravitEon Lookup,ankerl::unordered_dense,29.506778717,42.7535057068,1.4489384326513435,win,True
+81_lookup-stress_length_boundaries_1000000_s2027,bytes,length_boundaries,1000000,,build_ms,GravitEon Lookup,boost::unordered_flat_map,42.4184,55.2305,1.3020410953737058,win,True
+81_lookup-stress_length_boundaries_1000000_s2027,utf16,length_boundaries,1000000,,build_ms,GravitEon Lookup,ankerl::unordered_dense,48.5645,68.3892,1.408213818735908,win,True
+82_parallel_length_boundaries_1000000_s2027,bytes,length_boundaries,1000000,,ms,GravitEon Sort,std::sort,67.1512,331.4044,4.935196988289115,win,True
+82_parallel_length_boundaries_1000000_s2027,bytes,length_boundaries,1000000,,ms,GravitEon Parallel Sort,Microsoft PPL Buffered Sort,28.0275,84.2189,3.0048666488270452,win,True
+82_parallel_length_boundaries_1000000_s2027,utf16,length_boundaries,1000000,,ms,GravitEon Parallel Sort,Microsoft PPL Buffered Sort,34.6274,62.637,1.808885449095225,win,True
+82_parallel_length_boundaries_1000000_s2027,utf16,length_boundaries,1000000,,ms,GravitEon Sort,std::sort,90.1699,220.6953,2.447549570311157,win,True
+83_bank-stress_uniform_5000000_s731,,uniform,5000000,,build_copy_validate_ms,GravitEon Bank,Standard C++ Bank Pipeline,10344.1344,13524.2207,1.3074289425319143,win,True
+83_bank-stress_uniform_5000000_s731,,uniform,5000000,,group_query_ns,GravitEon Bank,Standard C++ Bank Pipeline,138.119506836,663.409423828,4.803155173553562,win,True
+84_bank-stress_dominant_5000000_s731,,dominant,5000000,,build_copy_validate_ms,GravitEon Bank,Standard C++ Bank Pipeline,9232.0879,12121.1438,1.3129363510501237,win,True
+84_bank-stress_dominant_5000000_s731,,dominant,5000000,,group_query_ns,GravitEon Bank,Standard C++ Bank Pipeline,49.4094848633,125.1953125,2.5338315678937913,win,True
+85_bank-stress_multisource_5000000_s731,,multisource,5000000,,build_copy_validate_ms,GravitEon Bank,Standard C++ Bank Pipeline,10053.286,13609.4992,1.3537364002177994,win,True
+85_bank-stress_multisource_5000000_s731,,multisource,5000000,,group_query_ns,GravitEon Bank,Standard C++ Bank Pipeline,131.462097168,664.517211914,5.054819801518837,win,True
+86_bank-stress_cancellation_5000000_s731,,cancellation,5000000,,build_copy_validate_ms,GravitEon Bank,Standard C++ Bank Pipeline,10099.2803,13419.9783,1.3288054100251085,win,True
+86_bank-stress_cancellation_5000000_s731,,cancellation,5000000,,group_query_ns,GravitEon Bank,Standard C++ Bank Pipeline,116.310119629,519.816589355,4.469229255485972,win,True
+87_bank-stress_unique_5000000_s731,,unique,5000000,,build_copy_validate_ms,GravitEon Bank,Standard C++ Bank Pipeline,11660.1962,14961.5434,1.2831296440792308,win,True
+87_bank-stress_unique_5000000_s731,,unique,5000000,,group_query_ns,GravitEon Bank,Standard C++ Bank Pipeline,158.232116699,1027.25524902,6.49207803352663,win,True
+88_bank-stress_typed_ids_5000000_s731,,typed_ids,5000000,,build_copy_validate_ms,GravitEon Bank,Standard C++ Bank Pipeline,10441.294,13846.0144,1.326082226973017,win,True
+88_bank-stress_typed_ids_5000000_s731,,typed_ids,5000000,,group_query_ns,GravitEon Bank,Standard C++ Bank Pipeline,129.867553711,687.364196777,5.2928093055993175,win,True
+89_bank-stress_regulatory_dims_5000000_s731,,regulatory_dims,5000000,,build_copy_validate_ms,GravitEon Bank,Standard C++ Bank Pipeline,13384.8765,17403.2832,1.3002199310542761,win,True
+89_bank-stress_regulatory_dims_5000000_s731,,regulatory_dims,5000000,,group_query_ns,GravitEon Bank,Standard C++ Bank Pipeline,180.436706543,953.715515137,5.285595893481459,win,True
+90_bank-stress_uniform_10000000_s731,,uniform,10000000,,build_copy_validate_ms,GravitEon Bank,Standard C++ Bank Pipeline,22742.7209,30581.2198,1.3446596796604051,win,True
+90_bank-stress_uniform_10000000_s731,,uniform,10000000,,group_query_ns,GravitEon Bank,Standard C++ Bank Pipeline,139.707946777,826.99432373,5.919450845913852,win,True
+91_bank-stress_dominant_10000000_s731,,dominant,10000000,,build_copy_validate_ms,GravitEon Bank,Standard C++ Bank Pipeline,20586.4838,27281.2772,1.3252033453133942,win,True
+91_bank-stress_dominant_10000000_s731,,dominant,10000000,,group_query_ns,GravitEon Bank,Standard C++ Bank Pipeline,50.9796142578,132.624816895,2.60152648908496,win,True
+92_bank-stress_multisource_10000000_s731,,multisource,10000000,,build_copy_validate_ms,GravitEon Bank,Standard C++ Bank Pipeline,22656.2966,30738.0488,1.356711087548174,win,True
+92_bank-stress_multisource_10000000_s731,,multisource,10000000,,group_query_ns,GravitEon Bank,Standard C++ Bank Pipeline,144.798278809,815.31829834,5.6307181621645315,win,True
+93_bank-stress_cancellation_10000000_s731,,cancellation,10000000,,build_copy_validate_ms,GravitEon Bank,Standard C++ Bank Pipeline,23201.9699,30472.2013,1.313345437104459,win,True
+93_bank-stress_cancellation_10000000_s731,,cancellation,10000000,,group_query_ns,GravitEon Bank,Standard C++ Bank Pipeline,126.440429688,661.383056641,5.230787796854265,win,True
+94_bank-stress_unique_10000000_s731,,unique,10000000,,build_copy_validate_ms,GravitEon Bank,Standard C++ Bank Pipeline,25666.8361,33582.306,1.3083928953752113,win,True
+94_bank-stress_unique_10000000_s731,,unique,10000000,,group_query_ns,GravitEon Bank,Standard C++ Bank Pipeline,214.378356934,1182.43255615,5.515634008306313,win,True
+95_bank-stress_typed_ids_10000000_s731,,typed_ids,10000000,,build_copy_validate_ms,GravitEon Bank,Standard C++ Bank Pipeline,22895.9684,31213.4613,1.363273252071749,win,True
+95_bank-stress_typed_ids_10000000_s731,,typed_ids,10000000,,group_query_ns,GravitEon Bank,Standard C++ Bank Pipeline,139.825439453,839.526367188,6.004103190894622,win,True
+96_bank-stress_regulatory_dims_10000000_s731,,regulatory_dims,10000000,,build_copy_validate_ms,GravitEon Bank,Standard C++ Bank Pipeline,30333.7907,39199.543,1.2922731414507977,win,True
+96_bank-stress_regulatory_dims_10000000_s731,,regulatory_dims,10000000,,group_query_ns,GravitEon Bank,Standard C++ Bank Pipeline,201.329040527,1134.95178223,5.637297924130289,win,True
+97_bank-stress_long_keys_1000000_s2027,,long_keys,1000000,,build_copy_validate_ms,GravitEon Bank,Standard C++ Bank Pipeline,2402.9398,3916.4681,1.6298652592129024,win,True
+97_bank-stress_long_keys_1000000_s2027,,long_keys,1000000,,group_query_ns,GravitEon Bank,Standard C++ Bank Pipeline,121.920776367,946.063232422,7.759655578096111,win,True
